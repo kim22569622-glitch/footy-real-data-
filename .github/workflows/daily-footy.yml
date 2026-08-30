@@ -1,0 +1,23 @@
+name: Daily Footy Real Data - 52 leagues
+on:
+  schedule:
+    - cron: '0 21 * * *'
+  workflow_dispatch:
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests
+      - run: python fetch_footy.py
+        env:
+          OPENWEATHER_KEY: ${{ secrets.OPENWEATHER_KEY }}
+      - run: |
+          git config user.name "footy-bot"
+          git config user.email "bot@footy.com"
+          git add data.json index.html
+          git commit -m "Real data $(date -u +%Y-%m-%d)" || exit 0
+          git push
