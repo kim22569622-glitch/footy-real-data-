@@ -1,0 +1,46 @@
+[
+  {
+    "home": "Real Madrid",
+    "away": "Malaga CF",
+    "league": "LaLiga FT 4:0",
+    "is_top": true,
+    "lat": 40.453,
+    "lon": -3.6883,
+    "weather": {
+      "wind": 3.09,
+      "rain": 0,
+      "temp": 24.42
+    }
+  },
+  {
+    "home": "Egersund",
+    "away": "Åsane",
+    "league": "OBOS",
+    "is_top": false,
+    "lat": 58.452,
+    "lon": 6.0,
+    "wind": 13,
+    "rain": 4,
+    "weather": {
+      "wind": 13,
+      "rain": 4,
+      "temp": 12
+    }
+  },
+  {
+    "home": "FC Copenhagen",
+    "away": "Brondby",
+    "league": "Superliga derby 5/5",
+    "is_top": false,
+    "is_derby": true,
+    "lat": 55.702,
+    "lon": 12.572,
+    "wind": 11,
+    "rain": 2,
+    "weather": {
+      "wind": 11,
+      "rain": 2,
+      "temp": 12
+    }
+  }
+]
