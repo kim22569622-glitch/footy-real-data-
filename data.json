@@ -1,1 +1,1202 @@
-[]
+[
+  {
+    "home": "Persib",
+    "away": "Manila Digger",
+    "league": "",
+    "category": "World",
+    "kickoff": "15:00 MSK",
+    "dt": "2026-08-31T15:00:00+03:00",
+    "city": "Persib",
+    "weather": {
+      "wind": 3.0,
+      "rain": 0,
+      "temp": 18.0,
+      "desc": ""
+    }
+  },
+  {
+    "home": "Boston United",
+    "away": "AFC Hornchurch",
+    "league": "",
+    "category": "World",
+    "kickoff": "17:00 MSK",
+    "dt": "2026-08-31T17:00:00+03:00",
+    "city": "Boston United",
+    "weather": {
+      "wind": 2.68,
+      "rain": 0,
+      "temp": 25.1,
+      "desc": "overcast clouds"
+    }
+  },
+  {
+    "home": "Carlisle United",
+    "away": "Scunthorpe United",
+    "league": "",
+    "category": "World",
+    "kickoff": "17:00 MSK",
+    "dt": "2026-08-31T17:00:00+03:00",
+    "city": "Carlisle United",
+    "weather": {
+      "wind": 2.15,
+      "rain": 0,
+      "temp": 27.1,
+      "desc": "overcast clouds"
+    }
+  },
+  {
+    "home": "Eastleigh",
+    "away": "Aldershot Town",
+    "league": "",
+    "category": "World",
+    "kickoff": "17:00 MSK",
+    "dt": "2026-08-31T17:00:00+03:00",
+    "city": "Eastleigh",
+    "weather": {
+      "wind": 4.12,
+      "rain": 0.58,
+      "temp": 16.5,
+      "desc": "light rain"
+    }
+  },
+  {
+    "home": "Forest Green Rovers",
+    "away": "Altrincham",
+    "league": "",
+    "category": "World",
+    "kickoff": "17:00 MSK",
+    "dt": "2026-08-31T17:00:00+03:00",
+    "city": "Forest Green Rovers",
+    "weather": {
+      "wind": 1.54,
+      "rain": 0,
+      "temp": 30.0,
+      "desc": "few clouds"
+    }
+  },
+  {
+    "home": "Harrogate Town",
+    "away": "Gateshead",
+    "league": "",
+    "category": "World",
+    "kickoff": "17:00 MSK",
+    "dt": "2026-08-31T17:00:00+03:00",
+    "city": "Harrogate Town",
+    "weather": {
+      "wind": 2.57,
+      "rain": 0.17,
+      "temp": 14.5,
+      "desc": "light rain"
+    }
+  },
+  {
+    "home": "Kidderminster Harriers",
+    "away": "Barrow",
+    "league": "",
+    "category": "World",
+    "kickoff": "17:00 MSK",
+    "dt": "2026-08-31T17:00:00+03:00",
+    "city": "Kidderminster Harriers",
+    "weather": {
+      "wind": 1.0,
+      "rain": 4.86,
+      "temp": 14.8,
+      "desc": "heavy intensity rain"
+    }
+  },
+  {
+    "home": "Solihull Moors",
+    "away": "AFC Fylde",
+    "league": "",
+    "category": "World",
+    "kickoff": "17:00 MSK",
+    "dt": "2026-08-31T17:00:00+03:00",
+    "city": "Solihull Moors",
+    "weather": {
+      "wind": 0.89,
+      "rain": 0,
+      "temp": 14.1,
+      "desc": "broken clouds"
+    }
+  },
+  {
+    "home": "Sutton United",
+    "away": "Wealdstone",
+    "league": "",
+    "category": "World",
+    "kickoff": "17:00 MSK",
+    "dt": "2026-08-31T17:00:00+03:00",
+    "city": "Sutton United",
+    "weather": {
+      "wind": 6.17,
+      "rain": 0,
+      "temp": 15.9,
+      "desc": "broken clouds"
+    }
+  },
+  {
+    "home": "Woking",
+    "away": "Southend United",
+    "league": "",
+    "category": "World",
+    "kickoff": "17:00 MSK",
+    "dt": "2026-08-31T17:00:00+03:00",
+    "city": "Woking",
+    "weather": {
+      "wind": 4.63,
+      "rain": 0,
+      "temp": 15.9,
+      "desc": "scattered clouds"
+    }
+  },
+  {
+    "home": "Worthing",
+    "away": "Boreham Wood",
+    "league": "",
+    "category": "World",
+    "kickoff": "17:00 MSK",
+    "dt": "2026-08-31T17:00:00+03:00",
+    "city": "Worthing",
+    "weather": {
+      "wind": 6.1,
+      "rain": 0,
+      "temp": 18.0,
+      "desc": "broken clouds"
+    }
+  },
+  {
+    "home": "Yeovil Town",
+    "away": "Tamworth",
+    "league": "",
+    "category": "World",
+    "kickoff": "17:00 MSK",
+    "dt": "2026-08-31T17:00:00+03:00",
+    "city": "Yeovil Town",
+    "weather": {
+      "wind": 3.09,
+      "rain": 0,
+      "temp": 16.2,
+      "desc": "few clouds"
+    }
+  },
+  {
+    "home": "Lecce",
+    "away": "AS Roma",
+    "league": "",
+    "category": "World",
+    "kickoff": "19:30 MSK",
+    "dt": "2026-08-31T19:30:00+03:00",
+    "city": "Lecce",
+    "weather": {
+      "wind": 2.57,
+      "rain": 0,
+      "temp": 27.9,
+      "desc": "clear sky"
+    }
+  },
+  {
+    "home": "Levadiakos",
+    "away": "Panathinaikos",
+    "league": "",
+    "category": "World",
+    "kickoff": "19:30 MSK",
+    "dt": "2026-08-31T19:30:00+03:00",
+    "city": "Levadiakos",
+    "weather": {
+      "wind": 3.0,
+      "rain": 0,
+      "temp": 18.0,
+      "desc": ""
+    }
+  },
+  {
+    "home": "Burgos",
+    "away": "Real Sociedad II",
+    "league": "",
+    "category": "World",
+    "kickoff": "20:00 MSK",
+    "dt": "2026-08-31T20:00:00+03:00",
+    "city": "Burgos",
+    "weather": {
+      "wind": 5.14,
+      "rain": 0,
+      "temp": 14.2,
+      "desc": "few clouds"
+    }
+  },
+  {
+    "home": "Djurgården",
+    "away": "Mjällby AIF",
+    "league": "",
+    "category": "World",
+    "kickoff": "20:00 MSK",
+    "dt": "2026-08-31T20:00:00+03:00",
+    "city": "Djurgården",
+    "weather": {
+      "wind": 1.54,
+      "rain": 0,
+      "temp": 17.4,
+      "desc": "overcast clouds"
+    }
+  },
+  {
+    "home": "GAIS",
+    "away": "IF Brommapojkarna",
+    "league": "",
+    "category": "World",
+    "kickoff": "20:00 MSK",
+    "dt": "2026-08-31T20:00:00+03:00",
+    "city": "GAIS",
+    "weather": {
+      "wind": 0.82,
+      "rain": 0,
+      "temp": 12.7,
+      "desc": "few clouds"
+    }
+  },
+  {
+    "home": "IK Sirius",
+    "away": "Malmö FF",
+    "league": "",
+    "category": "World",
+    "kickoff": "20:00 MSK",
+    "dt": "2026-08-31T20:00:00+03:00",
+    "city": "IK Sirius",
+    "weather": {
+      "wind": 3.0,
+      "rain": 0,
+      "temp": 18.0,
+      "desc": ""
+    }
+  },
+  {
+    "home": "F.C. København",
+    "away": "Sønderjyske Fodbold",
+    "league": "",
+    "category": "World",
+    "kickoff": "20:00 MSK",
+    "dt": "2026-08-31T20:00:00+03:00",
+    "city": "F.C. København",
+    "weather": {
+      "wind": 3.0,
+      "rain": 0,
+      "temp": 18.0,
+      "desc": ""
+    }
+  },
+  {
+    "home": "Navy",
+    "away": "Presbyterian",
+    "league": "",
+    "category": "World",
+    "kickoff": "20:00 MSK",
+    "dt": "2026-08-31T20:00:00+03:00",
+    "city": "Navy",
+    "weather": {
+      "wind": 7.27,
+      "rain": 0,
+      "temp": 22.4,
+      "desc": "clear sky"
+    }
+  },
+  {
+    "home": "Osasuna",
+    "away": "Getafe",
+    "league": "",
+    "category": "World",
+    "kickoff": "20:30 MSK",
+    "dt": "2026-08-31T20:30:00+03:00",
+    "city": "Osasuna",
+    "weather": {
+      "wind": 3.0,
+      "rain": 0,
+      "temp": 18.0,
+      "desc": ""
+    }
+  },
+  {
+    "home": "CD Sabadell",
+    "away": "Inter D'Escaldes",
+    "league": "",
+    "category": "World",
+    "kickoff": "21:00 MSK",
+    "dt": "2026-08-31T21:00:00+03:00",
+    "city": "CD Sabadell",
+    "weather": {
+      "wind": 3.0,
+      "rain": 0,
+      "temp": 18.0,
+      "desc": ""
+    }
+  },
+  {
+    "home": "Jong AZ",
+    "away": "Jong FC Utrecht",
+    "league": "",
+    "category": "World",
+    "kickoff": "21:00 MSK",
+    "dt": "2026-08-31T21:00:00+03:00",
+    "city": "Jong AZ",
+    "weather": {
+      "wind": 3.0,
+      "rain": 0,
+      "temp": 18.0,
+      "desc": ""
+    }
+  },
+  {
+    "home": "Jong PSV",
+    "away": "Jong Ajax",
+    "league": "",
+    "category": "World",
+    "kickoff": "21:00 MSK",
+    "dt": "2026-08-31T21:00:00+03:00",
+    "city": "Jong PSV",
+    "weather": {
+      "wind": 3.0,
+      "rain": 0,
+      "temp": 18.0,
+      "desc": ""
+    }
+  },
+  {
+    "home": "Central Connecticut",
+    "away": "VMI",
+    "league": "",
+    "category": "World",
+    "kickoff": "21:00 MSK",
+    "dt": "2026-08-31T21:00:00+03:00",
+    "city": "Central Connecticut",
+    "weather": {
+      "wind": 4.63,
+      "rain": 0,
+      "temp": 29.6,
+      "desc": "broken clouds"
+    }
+  },
+  {
+    "home": "Syracuse",
+    "away": "Iona",
+    "league": "",
+    "category": "World",
+    "kickoff": "21:00 MSK",
+    "dt": "2026-08-31T21:00:00+03:00",
+    "city": "Syracuse",
+    "weather": {
+      "wind": 0.45,
+      "rain": 0,
+      "temp": 25.8,
+      "desc": "clear sky"
+    }
+  },
+  {
+    "home": "Amed SFK",
+    "away": "Trabzonspor",
+    "league": "",
+    "category": "World",
+    "kickoff": "21:30 MSK",
+    "dt": "2026-08-31T21:30:00+03:00",
+    "city": "Amed SFK",
+    "weather": {
+      "wind": 3.0,
+      "rain": 0,
+      "temp": 18.0,
+      "desc": ""
+    }
+  },
+  {
+    "home": "Besiktas",
+    "away": "Çorum FK",
+    "league": "",
+    "category": "World",
+    "kickoff": "21:30 MSK",
+    "dt": "2026-08-31T21:30:00+03:00",
+    "city": "Besiktas",
+    "weather": {
+      "wind": 3.0,
+      "rain": 0,
+      "temp": 18.0,
+      "desc": ""
+    }
+  },
+  {
+    "home": "Racing (Montevideo)",
+    "away": "Albion FC",
+    "league": "",
+    "category": "World",
+    "kickoff": "21:30 MSK",
+    "dt": "2026-08-31T21:30:00+03:00",
+    "city": "Racing (Montevideo)",
+    "weather": {
+      "wind": 3.0,
+      "rain": 0,
+      "temp": 18.0,
+      "desc": ""
+    }
+  },
+  {
+    "home": "Atalanta",
+    "away": "Bologna",
+    "league": "",
+    "category": "World",
+    "kickoff": "21:45 MSK",
+    "dt": "2026-08-31T21:45:00+03:00",
+    "city": "Atalanta",
+    "weather": {
+      "wind": 0.84,
+      "rain": 0.93,
+      "temp": 18.0,
+      "desc": "light rain"
+    }
+  },
+  {
+    "home": "Dijon FCO",
+    "away": "Saint-Étienne",
+    "league": "",
+    "category": "World",
+    "kickoff": "21:45 MSK",
+    "dt": "2026-08-31T21:45:00+03:00",
+    "city": "Dijon FCO",
+    "weather": {
+      "wind": 2.06,
+      "rain": 0,
+      "temp": 18.9,
+      "desc": "broken clouds"
+    }
+  },
+  {
+    "home": "Aston Villa",
+    "away": "Arsenal",
+    "league": "",
+    "category": "World",
+    "kickoff": "22:00 MSK",
+    "dt": "2026-08-31T22:00:00+03:00",
+    "city": "Aston Villa",
+    "weather": {
+      "wind": 0.89,
+      "rain": 0.26,
+      "temp": 14.4,
+      "desc": "light rain"
+    }
+  },
+  {
+    "home": "San Antonio Bulo Bulo",
+    "away": "Guabirá",
+    "league": "",
+    "category": "World",
+    "kickoff": "22:00 MSK",
+    "dt": "2026-08-31T22:00:00+03:00",
+    "city": "San Antonio Bulo Bulo",
+    "weather": {
+      "wind": 2.65,
+      "rain": 0.53,
+      "temp": 25.7,
+      "desc": "light rain"
+    }
+  },
+  {
+    "home": "Manhattan",
+    "away": "Delaware State",
+    "league": "",
+    "category": "World",
+    "kickoff": "22:00 MSK",
+    "dt": "2026-08-31T22:00:00+03:00",
+    "city": "Manhattan",
+    "weather": {
+      "wind": 5.66,
+      "rain": 0,
+      "temp": 26.2,
+      "desc": "overcast clouds"
+    }
+  },
+  {
+    "home": "Benfica",
+    "away": "Estoril",
+    "league": "",
+    "category": "World",
+    "kickoff": "22:15 MSK",
+    "dt": "2026-08-31T22:15:00+03:00",
+    "city": "Benfica",
+    "weather": {
+      "wind": 3.37,
+      "rain": 0,
+      "temp": 19.2,
+      "desc": "clear sky"
+    }
+  },
+  {
+    "home": "Braga",
+    "away": "Vitória de Guimaraes",
+    "league": "",
+    "category": "World",
+    "kickoff": "22:15 MSK",
+    "dt": "2026-08-31T22:15:00+03:00",
+    "city": "Braga",
+    "weather": {
+      "wind": 1.56,
+      "rain": 0,
+      "temp": 16.8,
+      "desc": "clear sky"
+    }
+  },
+  {
+    "home": "Barcelona",
+    "away": "Rayo Vallecano",
+    "league": "",
+    "category": "World",
+    "kickoff": "22:30 MSK",
+    "dt": "2026-08-31T22:30:00+03:00",
+    "city": "Barcelona",
+    "weather": {
+      "wind": 2.57,
+      "rain": 0,
+      "temp": 24.9,
+      "desc": "clear sky"
+    }
+  },
+  {
+    "home": "RC Celta Fortuna",
+    "away": "Castellón",
+    "league": "",
+    "category": "World",
+    "kickoff": "22:30 MSK",
+    "dt": "2026-08-31T22:30:00+03:00",
+    "city": "RC Celta Fortuna",
+    "weather": {
+      "wind": 3.0,
+      "rain": 0,
+      "temp": 18.0,
+      "desc": ""
+    }
+  },
+  {
+    "home": "Atlético Grau",
+    "away": "Melgar",
+    "league": "",
+    "category": "World",
+    "kickoff": "23:00 MSK",
+    "dt": "2026-08-31T23:00:00+03:00",
+    "city": "Atlético Grau",
+    "weather": {
+      "wind": 3.0,
+      "rain": 0,
+      "temp": 18.0,
+      "desc": ""
+    }
+  },
+  {
+    "home": "Siena",
+    "away": "Northeastern",
+    "league": "",
+    "category": "World",
+    "kickoff": "00:00 MSK",
+    "dt": "2026-09-01T00:00:00+03:00",
+    "city": "Siena",
+    "weather": {
+      "wind": 1.0,
+      "rain": 0,
+      "temp": 22.3,
+      "desc": "clear sky"
+    }
+  },
+  {
+    "home": "Defensa y Justicia",
+    "away": "Platense",
+    "league": "",
+    "category": "World",
+    "kickoff": "01:00 MSK",
+    "dt": "2026-09-01T01:00:00+03:00",
+    "city": "Defensa y Justicia",
+    "weather": {
+      "wind": 3.0,
+      "rain": 0,
+      "temp": 18.0,
+      "desc": ""
+    }
+  },
+  {
+    "home": "Estudiantes de La Plata",
+    "away": "Newell's Old Boys",
+    "league": "",
+    "category": "World",
+    "kickoff": "01:00 MSK",
+    "dt": "2026-09-01T01:00:00+03:00",
+    "city": "Estudiantes de La Plata",
+    "weather": {
+      "wind": 3.0,
+      "rain": 0,
+      "temp": 18.0,
+      "desc": ""
+    }
+  },
+  {
+    "home": "Los Andes",
+    "away": "Acassuso",
+    "league": "",
+    "category": "World",
+    "kickoff": "01:00 MSK",
+    "dt": "2026-09-01T01:00:00+03:00",
+    "city": "Los Andes",
+    "weather": {
+      "wind": 0.28,
+      "rain": 0,
+      "temp": 13.2,
+      "desc": "overcast clouds"
+    }
+  },
+  {
+    "home": "Comunicaciones",
+    "away": "Deportivo Merlo",
+    "league": "",
+    "category": "World",
+    "kickoff": "01:00 MSK",
+    "dt": "2026-09-01T01:00:00+03:00",
+    "city": "Comunicaciones",
+    "weather": {
+      "wind": 3.0,
+      "rain": 0,
+      "temp": 18.0,
+      "desc": ""
+    }
+  },
+  {
+    "home": "Army",
+    "away": "Yale",
+    "league": "",
+    "category": "World",
+    "kickoff": "01:00 MSK",
+    "dt": "2026-09-01T01:00:00+03:00",
+    "city": "Army",
+    "weather": {
+      "wind": 1.83,
+      "rain": 0.37,
+      "temp": 22.9,
+      "desc": "light rain"
+    }
+  },
+  {
+    "home": "Bowling Green",
+    "away": "Wake Forest",
+    "league": "",
+    "category": "World",
+    "kickoff": "01:00 MSK",
+    "dt": "2026-09-01T01:00:00+03:00",
+    "city": "Bowling Green",
+    "weather": {
+      "wind": 3.6,
+      "rain": 0,
+      "temp": 33.0,
+      "desc": "few clouds"
+    }
+  },
+  {
+    "home": "Butler",
+    "away": "Memphis",
+    "league": "",
+    "category": "World",
+    "kickoff": "01:00 MSK",
+    "dt": "2026-09-01T01:00:00+03:00",
+    "city": "Butler",
+    "weather": {
+      "wind": 1.54,
+      "rain": 0,
+      "temp": 29.6,
+      "desc": "overcast clouds"
+    }
+  },
+  {
+    "home": "Fairleigh Dickinson",
+    "away": "Rider",
+    "league": "",
+    "category": "World",
+    "kickoff": "01:00 MSK",
+    "dt": "2026-09-01T01:00:00+03:00",
+    "city": "Fairleigh Dickinson",
+    "weather": {
+      "wind": 0.38,
+      "rain": 0,
+      "temp": 13.6,
+      "desc": "overcast clouds"
+    }
+  },
+  {
+    "home": "St Bonaventure",
+    "away": "Niagara",
+    "league": "",
+    "category": "World",
+    "kickoff": "01:00 MSK",
+    "dt": "2026-09-01T01:00:00+03:00",
+    "city": "St Bonaventure",
+    "weather": {
+      "wind": 3.0,
+      "rain": 0,
+      "temp": 18.0,
+      "desc": ""
+    }
+  },
+  {
+    "home": "Virginia",
+    "away": "Florida Gulf Coast",
+    "league": "",
+    "category": "World",
+    "kickoff": "01:03 MSK",
+    "dt": "2026-09-01T01:03:00+03:00",
+    "city": "Virginia",
+    "weather": {
+      "wind": 3.09,
+      "rain": 0,
+      "temp": 29.9,
+      "desc": "clear sky"
+    }
+  },
+  {
+    "home": "Unión La Calera",
+    "away": "La Serena",
+    "league": "",
+    "category": "World",
+    "kickoff": "01:15 MSK",
+    "dt": "2026-09-01T01:15:00+03:00",
+    "city": "Unión La Calera",
+    "weather": {
+      "wind": 3.61,
+      "rain": 0,
+      "temp": 18.5,
+      "desc": "few clouds"
+    }
+  },
+  {
+    "home": "Fortaleza",
+    "away": "Operário PR",
+    "league": "",
+    "category": "World",
+    "kickoff": "01:30 MSK",
+    "dt": "2026-09-01T01:30:00+03:00",
+    "city": "Fortaleza",
+    "weather": {
+      "wind": 7.72,
+      "rain": 0,
+      "temp": 28.1,
+      "desc": "clear sky"
+    }
+  },
+  {
+    "home": "UCV FC",
+    "away": "Rayo Zuliano",
+    "league": "",
+    "category": "World",
+    "kickoff": "01:30 MSK",
+    "dt": "2026-09-01T01:30:00+03:00",
+    "city": "UCV FC",
+    "weather": {
+      "wind": 3.0,
+      "rain": 0,
+      "temp": 18.0,
+      "desc": ""
+    }
+  },
+  {
+    "home": "Remo",
+    "away": "Coritiba",
+    "league": "",
+    "category": "World",
+    "kickoff": "02:00 MSK",
+    "dt": "2026-09-01T02:00:00+03:00",
+    "city": "Remo",
+    "weather": {
+      "wind": 4.47,
+      "rain": 0,
+      "temp": 27.8,
+      "desc": "few clouds"
+    }
+  },
+  {
+    "home": "Deportivo Pasto",
+    "away": "Deportivo Pereira",
+    "league": "",
+    "category": "World",
+    "kickoff": "02:00 MSK",
+    "dt": "2026-09-01T02:00:00+03:00",
+    "city": "Deportivo Pasto",
+    "weather": {
+      "wind": 3.0,
+      "rain": 0,
+      "temp": 18.0,
+      "desc": ""
+    }
+  },
+  {
+    "home": "Dayton",
+    "away": "Purdue Fort Wayne",
+    "league": "",
+    "category": "World",
+    "kickoff": "02:00 MSK",
+    "dt": "2026-09-01T02:00:00+03:00",
+    "city": "Dayton",
+    "weather": {
+      "wind": 4.63,
+      "rain": 0,
+      "temp": 28.9,
+      "desc": "overcast clouds"
+    }
+  },
+  {
+    "home": "Florida International",
+    "away": "St. Thomas (FL)",
+    "league": "",
+    "category": "World",
+    "kickoff": "02:00 MSK",
+    "dt": "2026-09-01T02:00:00+03:00",
+    "city": "Florida International",
+    "weather": {
+      "wind": 0.0,
+      "rain": 1.53,
+      "temp": 24.7,
+      "desc": "moderate rain"
+    }
+  },
+  {
+    "home": "Louisville",
+    "away": "Indiana",
+    "league": "",
+    "category": "World",
+    "kickoff": "02:00 MSK",
+    "dt": "2026-09-01T02:00:00+03:00",
+    "city": "Louisville",
+    "weather": {
+      "wind": 3.6,
+      "rain": 0,
+      "temp": 33.0,
+      "desc": "clear sky"
+    }
+  },
+  {
+    "home": "Mercer",
+    "away": "UAB",
+    "league": "",
+    "category": "World",
+    "kickoff": "02:00 MSK",
+    "dt": "2026-09-01T02:00:00+03:00",
+    "city": "Mercer",
+    "weather": {
+      "wind": 1.41,
+      "rain": 0,
+      "temp": 24.9,
+      "desc": "broken clouds"
+    }
+  },
+  {
+    "home": "Mount St. Mary's",
+    "away": "Saint Joseph's",
+    "league": "",
+    "category": "World",
+    "kickoff": "02:00 MSK",
+    "dt": "2026-09-01T02:00:00+03:00",
+    "city": "Mount St. Mary's",
+    "weather": {
+      "wind": 2.34,
+      "rain": 0.59,
+      "temp": 13.5,
+      "desc": "light rain"
+    }
+  },
+  {
+    "home": "Princeton",
+    "away": "Portland",
+    "league": "",
+    "category": "World",
+    "kickoff": "02:00 MSK",
+    "dt": "2026-09-01T02:00:00+03:00",
+    "city": "Princeton",
+    "weather": {
+      "wind": 2.57,
+      "rain": 0.27,
+      "temp": 27.3,
+      "desc": "light rain"
+    }
+  },
+  {
+    "home": "Providence",
+    "away": "Boston University",
+    "league": "",
+    "category": "World",
+    "kickoff": "02:00 MSK",
+    "dt": "2026-09-01T02:00:00+03:00",
+    "city": "Providence",
+    "weather": {
+      "wind": 4.12,
+      "rain": 0,
+      "temp": 23.5,
+      "desc": "overcast clouds"
+    }
+  },
+  {
+    "home": "UMBC",
+    "away": "George Washington",
+    "league": "",
+    "category": "World",
+    "kickoff": "02:00 MSK",
+    "dt": "2026-09-01T02:00:00+03:00",
+    "city": "UMBC",
+    "weather": {
+      "wind": 3.0,
+      "rain": 0,
+      "temp": 18.0,
+      "desc": ""
+    }
+  },
+  {
+    "home": "Academia Puerto Cabello",
+    "away": "Anzoátegui FC",
+    "league": "",
+    "category": "World",
+    "kickoff": "02:30 MSK",
+    "dt": "2026-09-01T02:30:00+03:00",
+    "city": "Academia Puerto Cabello",
+    "weather": {
+      "wind": 1.54,
+      "rain": 0,
+      "temp": 18.0,
+      "desc": "few clouds"
+    }
+  },
+  {
+    "home": "Northwestern",
+    "away": "Xavier",
+    "league": "",
+    "category": "World",
+    "kickoff": "02:30 MSK",
+    "dt": "2026-09-01T02:30:00+03:00",
+    "city": "Northwestern",
+    "weather": {
+      "wind": 3.0,
+      "rain": 0,
+      "temp": 18.0,
+      "desc": ""
+    }
+  },
+  {
+    "home": "Notre Dame",
+    "away": "Harvard",
+    "league": "",
+    "category": "World",
+    "kickoff": "02:30 MSK",
+    "dt": "2026-09-01T02:30:00+03:00",
+    "city": "Notre Dame",
+    "weather": {
+      "wind": 7.92,
+      "rain": 0,
+      "temp": 20.6,
+      "desc": "broken clouds"
+    }
+  },
+  {
+    "home": "Boston Legacy FC",
+    "away": "Angel City FC",
+    "league": "",
+    "category": "World",
+    "kickoff": "03:00 MSK",
+    "dt": "2026-09-01T03:00:00+03:00",
+    "city": "Boston Legacy FC",
+    "weather": {
+      "wind": 2.68,
+      "rain": 0,
+      "temp": 25.1,
+      "desc": "overcast clouds"
+    }
+  },
+  {
+    "home": "Gimnasia y Esgrima (Jujuy)",
+    "away": "Agropecuario",
+    "league": "",
+    "category": "World",
+    "kickoff": "03:00 MSK",
+    "dt": "2026-09-01T03:00:00+03:00",
+    "city": "Gimnasia y Esgrima (Jujuy)",
+    "weather": {
+      "wind": 3.0,
+      "rain": 0,
+      "temp": 18.0,
+      "desc": ""
+    }
+  },
+  {
+    "home": "Real Tomayapo",
+    "away": "Independiente Petrolero",
+    "league": "",
+    "category": "World",
+    "kickoff": "03:00 MSK",
+    "dt": "2026-09-01T03:00:00+03:00",
+    "city": "Real Tomayapo",
+    "weather": {
+      "wind": 4.73,
+      "rain": 0,
+      "temp": 25.6,
+      "desc": "overcast clouds"
+    }
+  },
+  {
+    "home": "SMU",
+    "away": "Houston Christian",
+    "league": "",
+    "category": "World",
+    "kickoff": "03:00 MSK",
+    "dt": "2026-09-01T03:00:00+03:00",
+    "city": "SMU",
+    "weather": {
+      "wind": 3.28,
+      "rain": 0,
+      "temp": 18.3,
+      "desc": "overcast clouds"
+    }
+  },
+  {
+    "home": "Tulsa",
+    "away": "Creighton",
+    "league": "",
+    "category": "World",
+    "kickoff": "03:00 MSK",
+    "dt": "2026-09-01T03:00:00+03:00",
+    "city": "Tulsa",
+    "weather": {
+      "wind": 6.17,
+      "rain": 0,
+      "temp": 38.0,
+      "desc": "scattered clouds"
+    }
+  },
+  {
+    "home": "Wisconsin",
+    "away": "Marquette",
+    "league": "",
+    "category": "World",
+    "kickoff": "03:00 MSK",
+    "dt": "2026-09-01T03:00:00+03:00",
+    "city": "Wisconsin",
+    "weather": {
+      "wind": 5.21,
+      "rain": 0,
+      "temp": 27.2,
+      "desc": "overcast clouds"
+    }
+  },
+  {
+    "home": "Instituto (Córdoba)",
+    "away": "San Lorenzo",
+    "league": "",
+    "category": "World",
+    "kickoff": "03:15 MSK",
+    "dt": "2026-09-01T03:15:00+03:00",
+    "city": "Instituto (Córdoba)",
+    "weather": {
+      "wind": 3.0,
+      "rain": 0,
+      "temp": 18.0,
+      "desc": ""
+    }
+  },
+  {
+    "home": "Tigre",
+    "away": "Barracas Central",
+    "league": "",
+    "category": "World",
+    "kickoff": "03:15 MSK",
+    "dt": "2026-09-01T03:15:00+03:00",
+    "city": "Tigre",
+    "weather": {
+      "wind": 2.57,
+      "rain": 0,
+      "temp": 15.5,
+      "desc": "broken clouds"
+    }
+  },
+  {
+    "home": "Universidad Católica",
+    "away": "O'Higgins",
+    "league": "",
+    "category": "World",
+    "kickoff": "03:45 MSK",
+    "dt": "2026-09-01T03:45:00+03:00",
+    "city": "Universidad Católica",
+    "weather": {
+      "wind": 2.57,
+      "rain": 0,
+      "temp": 22.1,
+      "desc": "clear sky"
+    }
+  },
+  {
+    "home": "Deportes Tolima",
+    "away": "Cúcuta Deportivo",
+    "league": "",
+    "category": "World",
+    "kickoff": "04:05 MSK",
+    "dt": "2026-09-01T04:05:00+03:00",
+    "city": "Deportes Tolima",
+    "weather": {
+      "wind": 3.0,
+      "rain": 0,
+      "temp": 18.0,
+      "desc": ""
+    }
+  },
+  {
+    "home": "California Baptist",
+    "away": "Denver",
+    "league": "",
+    "category": "World",
+    "kickoff": "05:00 MSK",
+    "dt": "2026-09-01T05:00:00+03:00",
+    "city": "California Baptist",
+    "weather": {
+      "wind": 4.63,
+      "rain": 0,
+      "temp": 28.2,
+      "desc": "clear sky"
+    }
+  },
+  {
+    "home": "Seattle U",
+    "away": "Cal State Fullerton",
+    "league": "",
+    "category": "World",
+    "kickoff": "05:00 MSK",
+    "dt": "2026-09-01T05:00:00+03:00",
+    "city": "Seattle U",
+    "weather": {
+      "wind": 2.57,
+      "rain": 0,
+      "temp": 21.1,
+      "desc": "overcast clouds"
+    }
+  },
+  {
+    "home": "UC Santa Barbara",
+    "away": "San Diego",
+    "league": "",
+    "category": "World",
+    "kickoff": "05:00 MSK",
+    "dt": "2026-09-01T05:00:00+03:00",
+    "city": "UC Santa Barbara",
+    "weather": {
+      "wind": 3.0,
+      "rain": 0,
+      "temp": 18.0,
+      "desc": ""
+    }
+  },
+  {
+    "home": "Utah Tech",
+    "away": "Sacramento State",
+    "league": "",
+    "category": "World",
+    "kickoff": "05:00 MSK",
+    "dt": "2026-09-01T05:00:00+03:00",
+    "city": "Utah Tech",
+    "weather": {
+      "wind": 6.62,
+      "rain": 0,
+      "temp": 20.1,
+      "desc": "broken clouds"
+    }
+  }
+]
