@@ -337,7 +337,7 @@ enriched.sort(key=lambda x: x["dt"])
 open("data.json","w",encoding="utf-8").write(json.dumps(enriched, ensure_ascii=False, indent=2, default=str))
 
 now=datetime.now(MSK).strftime("%d.%m %H:%M MSK")
-html=f"""<!DOCTYPE html><html lang=ru><head><meta charset=UTF-8><meta name=viewport content=width=device-width,initial-scale=1><title>FOOTY - 130+ РЕАЛЬНЫХ - АРХИТЕКТУРА РАЗ В СУТКИ - {len(enriched)}</title><style>
+html=f"""<!DOCTYPE html><html lang=ru><head><meta charset=UTF-8><meta name=viewport content=width=device-width,initial-scale=1><title>FOOTY • 130+ • 52 ЛИГИ — {len(enriched)} матчей</title><style>
 *{{box-sizing:border-box;margin:0;padding:0}}body{{background:#080808;color:#e5e5e5;font-family:Manrope,system-ui,sans-serif}}
 .header{{position:sticky;top:0;z-index:20;background:#080808E6;backdrop-filter:blur(14px);border-bottom:1px solid #232323;padding:18px 20px}}
 .header h1{{font-size:18px;font-weight:900;line-height:1.2}} .sub{{font-size:11px;color:#a1a1aa;margin-top:6px;font-family:monospace;line-height:1.5}}
