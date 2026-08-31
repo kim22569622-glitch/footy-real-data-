@@ -5,11 +5,11 @@
 .league{margin:12px auto;max-width:1150px;background:#151515;border:1px solid #232323;border-radius:16px;overflow:hidden} .league-head{padding:12px 16px;display:flex;justify-content:space-between;align-items:center;cursor:pointer} .league-head:hover{background:#1e1e1e} .league-title{font-weight:800;font-size:13px} .badge{font-size:10px;background:#1e1e1e;border:1px solid #2a2a2a;padding:4px 8px;border-radius:999px;color:#a1a1aa} .badge.real{background:#00ff8815;color:#00ff88;border-color:#00ff8830} .badge.fake{background:#ff000015;color:#ff8888;border-color:#ff000030} .badge.expert{background:#ffcc0015;color:#ffcc00;border-color:#ffcc0030}
 .factors-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px;margin:10px 0} .factor-group{background:#151515;border:1px solid #232323;border-radius:10px;padding:10px} .factor-group h4{font-size:11px;color:#ffcc00;margin-bottom:6px} .factor{font-size:10px;color:#a1a1aa;margin:2px 0;font-family:monospace} .factor b{color:#e5e5e5} .pick{background:#151515;border:1px solid #2a2a2a;border-radius:12px;padding:12px;margin:10px 0} .reason{font-size:11px;color:#c5c5c5;margin:4px 0;line-height:1.5} .reason span{color:#ffcc00;font-weight:700} .expert-note{background:#1a1a00;border:1px solid #ffcc0030;border-radius:10px;padding:10px;font-size:11px;color:#ffcc88;margin:8px 0;line-height:1.5} .linked{color:#00ff88;font-weight:700}
 </style></head><body>
-<div class=header><h1>⚽ FOOTY • 130+ РЕАЛЬНЫХ — 52 ЛИГИ — АРХИТЕКТУРА 00:00 МСК — 00:00 МСК КРОН</h1><div class=sub>00:00 МСК — крон → 1. Тяну расписание на завтра с Sofascore API scheduled-events/2026-08-31 — 52 лиги — как ты сказал — как ты писал → 2. Для каждого матча: FBref → тактика 35 факторов (PPDA фланги % кроссы точность прогрессивные ширина низкий блок % — Team Stats — сейчас рандом 58-84% надо реальные 78% у Реала), Understat → xG 20 факторов (xG xGA xG кросса xG удара setPiece xG конверсия — рандом 1.8-3.0 надо реальный 2.8 у Реала vs Малаги), Transfermarkt → судья 15 факторов (среднее ЖК строгость home bias фолов/игру — рандом 3.2-5.2 надо реальный реф), OpenWeatherMap → погода 25 факторов (по координатам стадиона Bernabeu 40.4530,-3.6883 ветер м/с дождь мм темп влажность — рандом 2-13 надо реальный прогноз 31 авг 19:00 Idrettsparken 13 м/с + 4мм — вручную для Egersund vs Asane надо автоматом), Flashscore → составы/травмы/мотивация за 1 час до матча если у Реала нет Вини фланги падают 78% до 60% — меняет ТБ на ТМ, H2H → история 15 факторов (H2H угловые среднее ЖК среднее голы среднее — рандом 7.5-11.5 надо реальные 11,12,13 в дерби) → всего 130+ реальных, не рандом → 3. Прогоняю через экспертные связки как Реал vs Малага фланги 78% реально, Egersund vs Asane ветер 13 м/с реально → 4. Сохраняю в JSON и рендерю в твой сайт | Обновлено 31.08 07:46 MSK | 80 матчей — 11 реальных на 31 авг: Celta vs Athletic, Osasuna vs Getafe, Barcelona vs Rayo, Lecce vs Roma, Atalanta vs Bologna, Egersund vs Asane ветер 13+4 и т.д. | ESPN fallback 80 матчей | 2 воркфлоу</div></div>
+<div class=header><h1>⚽ FOOTY • 130+ • 52 ЛИГИ</h1><div class=sub>Обновлено 31.08 07:54 MSK • 80 матчей • 52 лиги • 130+ критериев • 00:00 МСК крон • REAL/FAKE индикатор</div></div>
 <div id=content style="max-width:1150px;margin:0 auto;padding:16px 16px 24px">
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Persib vs TBD Away — 15:00 MSK — Persib </div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.0 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 18.0°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Persib vs TBD Away — 15:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.0 м/с | 🌡️ 18.0°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -35,7 +35,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Boston United vs AFC Hornchurch — 17:00 MSK — Boston United </div><div style="font-size:10px;color:#a1a1aa">🌬️ 2.57 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 20.8°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Boston United vs AFC Hornchurch — 17:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 0.45 м/с | 🌡️ 20.7°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -43,7 +43,7 @@
 <div class=factor>Кроссы <b>14</b> • Точность <b>32%</b> • eff <b>4.5</b> • PPDA <b>9.1</b> • Низкий блок <b>55%</b></div>
 </div>
 <div class=factor-group><h4>🌪️ Физика 25 — OpenWeatherMap по координатам <span style="color:#ff8888">RANDOM 2-13 надо координаты Bernabeu 40.4530,-3.6883</span></h4>
-<div class=factor>Ветер <b>2.57 м/с</b> • Дождь <b>0мм</b> • Темп <b>20.8°C</b> — Boston United нет координат — добавь в STADIUM_COORDS — вручную для Egersund vs Asane 13+4 надо автоматом</div>
+<div class=factor>Ветер <b>0.45 м/с</b> • Дождь <b>0мм</b> • Темп <b>20.7°C</b> — Boston United нет координат — добавь в STADIUM_COORDS — вручную для Egersund vs Asane 13+4 надо автоматом</div>
 </div>
 <div class=factor-group><h4>👨‍⚖️ Судья 15 — Transfermarkt + Sofascore <span style="color:#ff8888">RANDOM 3.2-5.2 ЖК — надо реальный реф</span></h4>
 <div class=factor>Судья <b>нет</b> • Ср ЖК <b>3.8</b> • Строгость <b>средний</b> • Фолов <b>26</b> — рандом 3.2-5.2 ЖК — надо реальный реф на матч — https://www.transfermarkt.com/.../schiedsrichter</div>
@@ -53,15 +53,15 @@
 </div>
 </div>
 <div class=expert-note><b>🔗 Связанные цепочки — как реальный эксперт (130+ факторов связанных, не детсад ТМ 8.5/4.5/2.5):</b><br>
-<div style="margin:6px 0"><span class=linked>1.</span> Физика рандом — надо координаты как Bernabeu 40.4530,-3.6883 — сейчас 2.57 м/с рандом</div><div style="margin:6px 0"><span class=linked>2.</span> Тактика рандом — надо парсить https://fbref.com/en/comps/12/La-Liga-Stats Team Stats — сейчас фланги 65% рандом, надо реальные 78% у Реала</div><div style="margin:6px 0"><span class=linked>3.</span> Фланги 65% + низкий блок 55% + сейвы 76% + кросс точность 32% = eff 4.5 — кроссы не долетают → ТМ угловых, если PPDA 9.1 высокий → ТБ</div><div style="margin:6px 0"><span class=linked>4.</span> Ветер 2.57 м/с + дождь 0мм + поле убитое — кроссы не долетают: -4.5 угловых, -1.0 ЖК, -0.75 xG — как Egersund-Åsane ОБОС</div>
+<div style="margin:6px 0"><span class=linked>1.</span> Физика рандом — надо координаты как Bernabeu 40.4530,-3.6883 — сейчас 0.45 м/с рандом</div><div style="margin:6px 0"><span class=linked>2.</span> Тактика рандом — надо парсить https://fbref.com/en/comps/12/La-Liga-Stats Team Stats — сейчас фланги 65% рандом, надо реальные 78% у Реала</div><div style="margin:6px 0"><span class=linked>3.</span> Фланги 65% + низкий блок 55% + сейвы 76% + кросс точность 32% = eff 4.5 — кроссы не долетают → ТМ угловых, если PPDA 9.1 высокий → ТБ</div><div style="margin:6px 0"><span class=linked>4.</span> Ветер 0.45 м/с + дождь 0мм + поле убитое — кроссы не долетают: -4.5 угловых, -1.0 ЖК, -0.75 xG — как Egersund-Åsane ОБОС</div>
 </div>
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:10px;margin-top:10px">
-<div class=pick><div style="display:flex;justify-content:space-between"><span>🚩 Угловые - 130+ факторов</span><span style="background:#ffcc00;color:#000;font-weight:800;padding:2px 8px;border-radius:999px;font-size:10px">1.9</span></div><div style="font-size:13px;font-weight:800;color:#ffcc00;margin:4px 0">ТБ 10.5 (10.6)</div><div style="font-size:10px;color:#a1a1aa">Фланги 65% RANDOM + eff 4.5 + PPDA 9.1 + блок 55% + ветер 2.57 + дождь 0</div><div style="margin-top:6px"><div class=reason><span>•</span> Фланги 65% база 65% +0.0</div><div class=reason><span>•</span> eff 4.5 база 10 2.2</div><div class=reason><span>•</span> Ветер 2.57 рандом</div></div></div><div class=pick><div style="display:flex;justify-content:space-between"><span>🟨 ЖК - 130+ факторов</span><span style="background:#ffcc00;color:#000;font-weight:800;padding:2px 8px;border-radius:999px;font-size:10px">1.85</span></div><div style="font-size:13px;font-weight:800;color:#ffcc00;margin:4px 0">ТМ 4.5 (3.8)</div><div style="font-size:10px;color:#a1a1aa">Судья средний 3.8 RANDOM 3.2-5.2 + дерби 0/5</div><div style="margin-top:6px"><div class=reason><span>•</span> Реф 3.8 RANDOM</div><div class=reason><span>•</span> Дерби 0/5</div></div></div><div class=pick><div style="display:flex;justify-content:space-between"><span>⚽ Голы - 130+ факторов</span><span style="background:#ffcc00;color:#000;font-weight:800;padding:2px 8px;border-radius:999px;font-size:10px">1.85</span></div><div style="font-size:13px;font-weight:800;color:#ffcc00;margin:4px 0">ТМ 2.5 (1.68)</div><div style="font-size:10px;color:#a1a1aa">xG 1.4 RANDOM 1.8-3.0 vs xGA 1.1</div><div style="margin-top:6px"><div class=reason><span>•</span> xG 1.4 RANDOM</div><div class=reason><span>•</span> H2H 3.2</div></div></div>
+<div class=pick><div style="display:flex;justify-content:space-between"><span>🚩 Угловые - 130+ факторов</span><span style="background:#ffcc00;color:#000;font-weight:800;padding:2px 8px;border-radius:999px;font-size:10px">1.9</span></div><div style="font-size:13px;font-weight:800;color:#ffcc00;margin:4px 0">ТБ 10.5 (11.3)</div><div style="font-size:10px;color:#a1a1aa">Фланги 65% RANDOM + eff 4.5 + PPDA 9.1 + блок 55% + ветер 0.45 + дождь 0</div><div style="margin-top:6px"><div class=reason><span>•</span> Фланги 65% база 65% +0.0</div><div class=reason><span>•</span> eff 4.5 база 10 2.2</div><div class=reason><span>•</span> Ветер 0.45 рандом</div></div></div><div class=pick><div style="display:flex;justify-content:space-between"><span>🟨 ЖК - 130+ факторов</span><span style="background:#ffcc00;color:#000;font-weight:800;padding:2px 8px;border-radius:999px;font-size:10px">1.85</span></div><div style="font-size:13px;font-weight:800;color:#ffcc00;margin:4px 0">ТМ 4.5 (3.8)</div><div style="font-size:10px;color:#a1a1aa">Судья средний 3.8 RANDOM 3.2-5.2 + дерби 0/5</div><div style="margin-top:6px"><div class=reason><span>•</span> Реф 3.8 RANDOM</div><div class=reason><span>•</span> Дерби 0/5</div></div></div><div class=pick><div style="display:flex;justify-content:space-between"><span>⚽ Голы - 130+ факторов</span><span style="background:#ffcc00;color:#000;font-weight:800;padding:2px 8px;border-radius:999px;font-size:10px">1.85</span></div><div style="font-size:13px;font-weight:800;color:#ffcc00;margin:4px 0">ТМ 2.5 (1.68)</div><div style="font-size:10px;color:#a1a1aa">xG 1.4 RANDOM 1.8-3.0 vs xGA 1.1</div><div style="margin-top:6px"><div class=reason><span>•</span> xG 1.4 RANDOM</div><div class=reason><span>•</span> H2H 3.2</div></div></div>
 </div>
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Carlisle United vs Scunthorpe United — 17:00 MSK — Carlisle United </div><div style="font-size:10px;color:#a1a1aa">🌬️ 1.86 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 23.3°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Carlisle United vs Scunthorpe United — 17:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 1.86 м/с | 🌡️ 23.6°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -69,7 +69,7 @@
 <div class=factor>Кроссы <b>14</b> • Точность <b>32%</b> • eff <b>4.5</b> • PPDA <b>9.1</b> • Низкий блок <b>55%</b></div>
 </div>
 <div class=factor-group><h4>🌪️ Физика 25 — OpenWeatherMap по координатам <span style="color:#ff8888">RANDOM 2-13 надо координаты Bernabeu 40.4530,-3.6883</span></h4>
-<div class=factor>Ветер <b>1.86 м/с</b> • Дождь <b>0мм</b> • Темп <b>23.3°C</b> — Carlisle United нет координат — добавь в STADIUM_COORDS — вручную для Egersund vs Asane 13+4 надо автоматом</div>
+<div class=factor>Ветер <b>1.86 м/с</b> • Дождь <b>0мм</b> • Темп <b>23.6°C</b> — Carlisle United нет координат — добавь в STADIUM_COORDS — вручную для Egersund vs Asane 13+4 надо автоматом</div>
 </div>
 <div class=factor-group><h4>👨‍⚖️ Судья 15 — Transfermarkt + Sofascore <span style="color:#ff8888">RANDOM 3.2-5.2 ЖК — надо реальный реф</span></h4>
 <div class=factor>Судья <b>нет</b> • Ср ЖК <b>3.8</b> • Строгость <b>средний</b> • Фолов <b>26</b> — рандом 3.2-5.2 ЖК — надо реальный реф на матч — https://www.transfermarkt.com/.../schiedsrichter</div>
@@ -87,7 +87,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Eastleigh vs Aldershot Town — 17:00 MSK — Eastleigh </div><div style="font-size:10px;color:#a1a1aa">🌬️ 4.12 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 13.8°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Eastleigh vs Aldershot Town — 17:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 4.12 м/с | 🌡️ 13.8°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -113,7 +113,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Forest Green Rovers vs Altrincham — 17:00 MSK — Forest Green Rovers </div><div style="font-size:10px;color:#a1a1aa">🌬️ 0.0 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 22.0°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Forest Green Rovers vs Altrincham — 17:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 0.0 м/с | 🌡️ 21.8°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -121,7 +121,7 @@
 <div class=factor>Кроссы <b>14</b> • Точность <b>32%</b> • eff <b>4.5</b> • PPDA <b>9.1</b> • Низкий блок <b>55%</b></div>
 </div>
 <div class=factor-group><h4>🌪️ Физика 25 — OpenWeatherMap по координатам <span style="color:#ff8888">RANDOM 2-13 надо координаты Bernabeu 40.4530,-3.6883</span></h4>
-<div class=factor>Ветер <b>0.0 м/с</b> • Дождь <b>0мм</b> • Темп <b>22.0°C</b> — Forest Green Rovers нет координат — добавь в STADIUM_COORDS — вручную для Egersund vs Asane 13+4 надо автоматом</div>
+<div class=factor>Ветер <b>0.0 м/с</b> • Дождь <b>0мм</b> • Темп <b>21.8°C</b> — Forest Green Rovers нет координат — добавь в STADIUM_COORDS — вручную для Egersund vs Asane 13+4 надо автоматом</div>
 </div>
 <div class=factor-group><h4>👨‍⚖️ Судья 15 — Transfermarkt + Sofascore <span style="color:#ff8888">RANDOM 3.2-5.2 ЖК — надо реальный реф</span></h4>
 <div class=factor>Судья <b>нет</b> • Ср ЖК <b>3.8</b> • Строгость <b>средний</b> • Фолов <b>26</b> — рандом 3.2-5.2 ЖК — надо реальный реф на матч — https://www.transfermarkt.com/.../schiedsrichter</div>
@@ -139,7 +139,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Harrogate Town vs Gateshead — 17:00 MSK — Harrogate Town </div><div style="font-size:10px;color:#a1a1aa">🌬️ 2.57 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 13.5°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Harrogate Town vs Gateshead — 17:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 2.57 м/с | 🌡️ 13.5°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -165,7 +165,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Kidderminster Harriers vs Barrow — 17:00 MSK — Kidderminster Harriers </div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.87 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 12.3°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Kidderminster Harriers vs Barrow — 17:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.87 м/с | 🌡️ 12.2°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -173,7 +173,7 @@
 <div class=factor>Кроссы <b>14</b> • Точность <b>32%</b> • eff <b>4.5</b> • PPDA <b>9.1</b> • Низкий блок <b>55%</b></div>
 </div>
 <div class=factor-group><h4>🌪️ Физика 25 — OpenWeatherMap по координатам <span style="color:#ff8888">RANDOM 2-13 надо координаты Bernabeu 40.4530,-3.6883</span></h4>
-<div class=factor>Ветер <b>3.87 м/с</b> • Дождь <b>0мм</b> • Темп <b>12.3°C</b> — Kidderminster Harriers нет координат — добавь в STADIUM_COORDS — вручную для Egersund vs Asane 13+4 надо автоматом</div>
+<div class=factor>Ветер <b>3.87 м/с</b> • Дождь <b>0мм</b> • Темп <b>12.2°C</b> — Kidderminster Harriers нет координат — добавь в STADIUM_COORDS — вручную для Egersund vs Asane 13+4 надо автоматом</div>
 </div>
 <div class=factor-group><h4>👨‍⚖️ Судья 15 — Transfermarkt + Sofascore <span style="color:#ff8888">RANDOM 3.2-5.2 ЖК — надо реальный реф</span></h4>
 <div class=factor>Судья <b>нет</b> • Ср ЖК <b>3.8</b> • Строгость <b>средний</b> • Фолов <b>26</b> — рандом 3.2-5.2 ЖК — надо реальный реф на матч — https://www.transfermarkt.com/.../schiedsrichter</div>
@@ -191,7 +191,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Solihull Moors vs AFC Fylde — 17:00 MSK — Solihull Moors </div><div style="font-size:10px;color:#a1a1aa">🌬️ 2.57 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 11.7°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Solihull Moors vs AFC Fylde — 17:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 2.57 м/с | 🌡️ 11.7°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -217,7 +217,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Sutton United vs Wealdstone — 17:00 MSK — Sutton United </div><div style="font-size:10px;color:#a1a1aa">🌬️ 5.14 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 13.7°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Sutton United vs Wealdstone — 17:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 5.14 м/с | 🌡️ 13.6°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -225,7 +225,7 @@
 <div class=factor>Кроссы <b>14</b> • Точность <b>32%</b> • eff <b>4.5</b> • PPDA <b>9.1</b> • Низкий блок <b>55%</b></div>
 </div>
 <div class=factor-group><h4>🌪️ Физика 25 — OpenWeatherMap по координатам <span style="color:#ff8888">RANDOM 2-13 надо координаты Bernabeu 40.4530,-3.6883</span></h4>
-<div class=factor>Ветер <b>5.14 м/с</b> • Дождь <b>0мм</b> • Темп <b>13.7°C</b> — Sutton United нет координат — добавь в STADIUM_COORDS — вручную для Egersund vs Asane 13+4 надо автоматом</div>
+<div class=factor>Ветер <b>5.14 м/с</b> • Дождь <b>0мм</b> • Темп <b>13.6°C</b> — Sutton United нет координат — добавь в STADIUM_COORDS — вручную для Egersund vs Asane 13+4 надо автоматом</div>
 </div>
 <div class=factor-group><h4>👨‍⚖️ Судья 15 — Transfermarkt + Sofascore <span style="color:#ff8888">RANDOM 3.2-5.2 ЖК — надо реальный реф</span></h4>
 <div class=factor>Судья <b>нет</b> • Ср ЖК <b>3.8</b> • Строгость <b>средний</b> • Фолов <b>26</b> — рандом 3.2-5.2 ЖК — надо реальный реф на матч — https://www.transfermarkt.com/.../schiedsrichter</div>
@@ -243,7 +243,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Woking vs Southend United — 17:00 MSK — Woking </div><div style="font-size:10px;color:#a1a1aa">🌬️ 5.14 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 14.0°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Woking vs Southend United — 17:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 5.14 м/с | 🌡️ 14.0°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -269,7 +269,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Worthing vs Boreham Wood — 17:00 MSK — Worthing </div><div style="font-size:10px;color:#a1a1aa">🌬️ 2.7 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 14.6°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Worthing vs Boreham Wood — 17:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.3 м/с | 🌡️ 14.5°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -277,7 +277,7 @@
 <div class=factor>Кроссы <b>14</b> • Точность <b>32%</b> • eff <b>4.5</b> • PPDA <b>9.1</b> • Низкий блок <b>55%</b></div>
 </div>
 <div class=factor-group><h4>🌪️ Физика 25 — OpenWeatherMap по координатам <span style="color:#ff8888">RANDOM 2-13 надо координаты Bernabeu 40.4530,-3.6883</span></h4>
-<div class=factor>Ветер <b>2.7 м/с</b> • Дождь <b>0мм</b> • Темп <b>14.6°C</b> — Worthing нет координат — добавь в STADIUM_COORDS — вручную для Egersund vs Asane 13+4 надо автоматом</div>
+<div class=factor>Ветер <b>3.3 м/с</b> • Дождь <b>0мм</b> • Темп <b>14.5°C</b> — Worthing нет координат — добавь в STADIUM_COORDS — вручную для Egersund vs Asane 13+4 надо автоматом</div>
 </div>
 <div class=factor-group><h4>👨‍⚖️ Судья 15 — Transfermarkt + Sofascore <span style="color:#ff8888">RANDOM 3.2-5.2 ЖК — надо реальный реф</span></h4>
 <div class=factor>Судья <b>нет</b> • Ср ЖК <b>3.8</b> • Строгость <b>средний</b> • Фолов <b>26</b> — рандом 3.2-5.2 ЖК — надо реальный реф на матч — https://www.transfermarkt.com/.../schiedsrichter</div>
@@ -287,15 +287,15 @@
 </div>
 </div>
 <div class=expert-note><b>🔗 Связанные цепочки — как реальный эксперт (130+ факторов связанных, не детсад ТМ 8.5/4.5/2.5):</b><br>
-<div style="margin:6px 0"><span class=linked>1.</span> Физика рандом — надо координаты как Bernabeu 40.4530,-3.6883 — сейчас 2.7 м/с рандом</div><div style="margin:6px 0"><span class=linked>2.</span> Тактика рандом — надо парсить https://fbref.com/en/comps/12/La-Liga-Stats Team Stats — сейчас фланги 65% рандом, надо реальные 78% у Реала</div><div style="margin:6px 0"><span class=linked>3.</span> Фланги 65% + низкий блок 55% + сейвы 81% + кросс точность 32% = eff 4.5 — кроссы не долетают → ТМ угловых, если PPDA 9.1 высокий → ТБ</div><div style="margin:6px 0"><span class=linked>4.</span> Ветер 2.7 м/с + дождь 0мм + поле тяжелое — кроссы не долетают: -4.5 угловых, -1.0 ЖК, -0.75 xG — как Egersund-Åsane ОБОС</div>
+<div style="margin:6px 0"><span class=linked>1.</span> Физика рандом — надо координаты как Bernabeu 40.4530,-3.6883 — сейчас 3.3 м/с рандом</div><div style="margin:6px 0"><span class=linked>2.</span> Тактика рандом — надо парсить https://fbref.com/en/comps/12/La-Liga-Stats Team Stats — сейчас фланги 65% рандом, надо реальные 78% у Реала</div><div style="margin:6px 0"><span class=linked>3.</span> Фланги 65% + низкий блок 55% + сейвы 81% + кросс точность 32% = eff 4.5 — кроссы не долетают → ТМ угловых, если PPDA 9.1 высокий → ТБ</div><div style="margin:6px 0"><span class=linked>4.</span> Ветер 3.3 м/с + дождь 0мм + поле тяжелое — кроссы не долетают: -4.5 угловых, -1.0 ЖК, -0.75 xG — как Egersund-Åsane ОБОС</div>
 </div>
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:10px;margin-top:10px">
-<div class=pick><div style="display:flex;justify-content:space-between"><span>🚩 Угловые - 130+ факторов</span><span style="background:#ffcc00;color:#000;font-weight:800;padding:2px 8px;border-radius:999px;font-size:10px">1.9</span></div><div style="font-size:13px;font-weight:800;color:#ffcc00;margin:4px 0">ТБ 10.5 (10.6)</div><div style="font-size:10px;color:#a1a1aa">Фланги 65% RANDOM + eff 4.5 + PPDA 9.1 + блок 55% + ветер 2.7 + дождь 0</div><div style="margin-top:6px"><div class=reason><span>•</span> Фланги 65% база 65% +0.0</div><div class=reason><span>•</span> eff 4.5 база 10 2.2</div><div class=reason><span>•</span> Ветер 2.7 рандом</div></div></div><div class=pick><div style="display:flex;justify-content:space-between"><span>🟨 ЖК - 130+ факторов</span><span style="background:#ffcc00;color:#000;font-weight:800;padding:2px 8px;border-radius:999px;font-size:10px">1.85</span></div><div style="font-size:13px;font-weight:800;color:#ffcc00;margin:4px 0">ТМ 4.5 (3.8)</div><div style="font-size:10px;color:#a1a1aa">Судья средний 3.8 RANDOM 3.2-5.2 + дерби 0/5</div><div style="margin-top:6px"><div class=reason><span>•</span> Реф 3.8 RANDOM</div><div class=reason><span>•</span> Дерби 0/5</div></div></div><div class=pick><div style="display:flex;justify-content:space-between"><span>⚽ Голы - 130+ факторов</span><span style="background:#ffcc00;color:#000;font-weight:800;padding:2px 8px;border-radius:999px;font-size:10px">1.85</span></div><div style="font-size:13px;font-weight:800;color:#ffcc00;margin:4px 0">ТМ 2.5 (1.68)</div><div style="font-size:10px;color:#a1a1aa">xG 1.4 RANDOM 1.8-3.0 vs xGA 1.1</div><div style="margin-top:6px"><div class=reason><span>•</span> xG 1.4 RANDOM</div><div class=reason><span>•</span> H2H 2.1</div></div></div>
+<div class=pick><div style="display:flex;justify-content:space-between"><span>🚩 Угловые - 130+ факторов</span><span style="background:#ffcc00;color:#000;font-weight:800;padding:2px 8px;border-radius:999px;font-size:10px">1.9</span></div><div style="font-size:13px;font-weight:800;color:#ffcc00;margin:4px 0">ТБ 10.5 (10.3)</div><div style="font-size:10px;color:#a1a1aa">Фланги 65% RANDOM + eff 4.5 + PPDA 9.1 + блок 55% + ветер 3.3 + дождь 0</div><div style="margin-top:6px"><div class=reason><span>•</span> Фланги 65% база 65% +0.0</div><div class=reason><span>•</span> eff 4.5 база 10 2.2</div><div class=reason><span>•</span> Ветер 3.3 рандом</div></div></div><div class=pick><div style="display:flex;justify-content:space-between"><span>🟨 ЖК - 130+ факторов</span><span style="background:#ffcc00;color:#000;font-weight:800;padding:2px 8px;border-radius:999px;font-size:10px">1.85</span></div><div style="font-size:13px;font-weight:800;color:#ffcc00;margin:4px 0">ТМ 4.5 (3.8)</div><div style="font-size:10px;color:#a1a1aa">Судья средний 3.8 RANDOM 3.2-5.2 + дерби 0/5</div><div style="margin-top:6px"><div class=reason><span>•</span> Реф 3.8 RANDOM</div><div class=reason><span>•</span> Дерби 0/5</div></div></div><div class=pick><div style="display:flex;justify-content:space-between"><span>⚽ Голы - 130+ факторов</span><span style="background:#ffcc00;color:#000;font-weight:800;padding:2px 8px;border-radius:999px;font-size:10px">1.85</span></div><div style="font-size:13px;font-weight:800;color:#ffcc00;margin:4px 0">ТМ 2.5 (1.68)</div><div style="font-size:10px;color:#a1a1aa">xG 1.4 RANDOM 1.8-3.0 vs xGA 1.1</div><div style="margin-top:6px"><div class=reason><span>•</span> xG 1.4 RANDOM</div><div class=reason><span>•</span> H2H 2.1</div></div></div>
 </div>
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Yeovil Town vs Tamworth — 17:00 MSK — Yeovil Town </div><div style="font-size:10px;color:#a1a1aa">🌬️ 2.57 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 14.7°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Yeovil Town vs Tamworth — 17:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 2.57 м/с | 🌡️ 14.7°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -321,7 +321,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Lecce vs AS Roma — 19:30 MSK — Lecce </div><div style="font-size:10px;color:#a1a1aa">🌬️ 2.06 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 26.9°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Lecce vs AS Roma — 19:30 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 2.06 м/с | 🌡️ 26.9°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -347,7 +347,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Levadiakos vs Panathinaikos — 19:30 MSK — Levadiakos </div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.0 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 18.0°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Levadiakos vs Panathinaikos — 19:30 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.0 м/с | 🌡️ 18.0°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -373,7 +373,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Burgos vs Real Sociedad II — 20:00 MSK — Burgos </div><div style="font-size:10px;color:#a1a1aa">🌬️ 4.12 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 11.2°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Burgos vs Real Sociedad II — 20:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 4.12 м/с | 🌡️ 11.2°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -399,7 +399,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Djurgården vs Mjällby AIF — 20:00 MSK — Djurgården </div><div style="font-size:10px;color:#a1a1aa">🌬️ 4.63 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 17.4°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Djurgården vs Mjällby AIF — 20:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 4.63 м/с | 🌡️ 17.4°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -425,7 +425,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — GAIS vs IF Brommapojkarna — 20:00 MSK — GAIS </div><div style="font-size:10px;color:#a1a1aa">🌬️ 0.54 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 10.8°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — GAIS vs IF Brommapojkarna — 20:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 0.54 м/с | 🌡️ 10.8°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -451,7 +451,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — IK Sirius vs Malmö FF — 20:00 MSK — IK Sirius </div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.0 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 18.0°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — IK Sirius vs Malmö FF — 20:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.0 м/с | 🌡️ 18.0°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -477,7 +477,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — F.C. København vs Sønderjyske Fodbold — 20:00 MSK — F.C. København </div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.0 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 18.0°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — F.C. København vs Sønderjyske Fodbold — 20:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.0 м/с | 🌡️ 18.0°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -503,7 +503,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Navy vs Presbyterian — 20:00 MSK — Navy </div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.14 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 10.4°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Navy vs Presbyterian — 20:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.14 м/с | 🌡️ 10.4°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -529,7 +529,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Osasuna vs Getafe — 20:30 MSK — Osasuna </div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.0 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 18.0°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Osasuna vs Getafe — 20:30 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.0 м/с | 🌡️ 18.0°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -555,7 +555,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — CD Sabadell vs Inter D'Escaldes — 21:00 MSK — CD Sabadell </div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.0 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 18.0°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — CD Sabadell vs Inter D'Escaldes — 21:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.0 м/с | 🌡️ 18.0°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -581,7 +581,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Jong AZ vs Jong FC Utrecht — 21:00 MSK — Jong AZ </div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.0 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 18.0°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Jong AZ vs Jong FC Utrecht — 21:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.0 м/с | 🌡️ 18.0°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -607,7 +607,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Jong PSV vs Jong Ajax — 21:00 MSK — Jong PSV </div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.0 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 18.0°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Jong PSV vs Jong Ajax — 21:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.0 м/с | 🌡️ 18.0°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -633,7 +633,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Central Connecticut vs VMI — 21:00 MSK — Central Connecticut </div><div style="font-size:10px;color:#a1a1aa">🌬️ 1.54 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 26.2°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Central Connecticut vs VMI — 21:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 1.54 м/с | 🌡️ 26.2°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -659,7 +659,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Amed SFK vs Trabzonspor — 21:30 MSK — Amed SFK </div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.0 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 18.0°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Amed SFK vs Trabzonspor — 21:30 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.0 м/с | 🌡️ 18.0°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -685,7 +685,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Besiktas vs Çorum FK — 21:30 MSK — Besiktas </div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.0 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 18.0°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Besiktas vs Çorum FK — 21:30 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.0 м/с | 🌡️ 18.0°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -711,7 +711,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Racing (Montevideo) vs Albion FC — 21:30 MSK — Racing (Montevideo) </div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.0 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 18.0°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Racing (Montevideo) vs Albion FC — 21:30 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.0 м/с | 🌡️ 18.0°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -737,7 +737,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Atalanta vs Bologna — 21:45 MSK — Atalanta </div><div style="font-size:10px;color:#a1a1aa">🌬️ 0.64 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 17.7°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Atalanta vs Bologna — 21:45 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 0.64 м/с | 🌡️ 17.7°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -763,7 +763,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Dijon FCO vs Saint-Étienne — 21:45 MSK — Dijon FCO </div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.09 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 15.8°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Dijon FCO vs Saint-Étienne — 21:45 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.09 м/с | 🌡️ 15.8°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -789,7 +789,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Aston Villa vs Arsenal — 22:00 MSK — Aston Villa </div><div style="font-size:10px;color:#a1a1aa">🌬️ 2.57 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 11.8°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Aston Villa vs Arsenal — 22:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 2.57 м/с | 🌡️ 11.7°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -797,7 +797,7 @@
 <div class=factor>Кроссы <b>14</b> • Точность <b>32%</b> • eff <b>4.5</b> • PPDA <b>9.1</b> • Низкий блок <b>55%</b></div>
 </div>
 <div class=factor-group><h4>🌪️ Физика 25 — OpenWeatherMap по координатам <span style="color:#ff8888">RANDOM 2-13 надо координаты Bernabeu 40.4530,-3.6883</span></h4>
-<div class=factor>Ветер <b>2.57 м/с</b> • Дождь <b>0мм</b> • Темп <b>11.8°C</b> — Aston Villa нет координат — добавь в STADIUM_COORDS — вручную для Egersund vs Asane 13+4 надо автоматом</div>
+<div class=factor>Ветер <b>2.57 м/с</b> • Дождь <b>0мм</b> • Темп <b>11.7°C</b> — Aston Villa нет координат — добавь в STADIUM_COORDS — вручную для Egersund vs Asane 13+4 надо автоматом</div>
 </div>
 <div class=factor-group><h4>👨‍⚖️ Судья 15 — Transfermarkt + Sofascore <span style="color:#ff8888">RANDOM 3.2-5.2 ЖК — надо реальный реф</span></h4>
 <div class=factor>Судья <b>нет</b> • Ср ЖК <b>3.8</b> • Строгость <b>средний</b> • Фолов <b>26</b> — рандом 3.2-5.2 ЖК — надо реальный реф на матч — https://www.transfermarkt.com/.../schiedsrichter</div>
@@ -815,7 +815,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — San Antonio Bulo Bulo vs Guabirá — 22:00 MSK — San Antonio Bulo Bulo </div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.48 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 25.7°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — San Antonio Bulo Bulo vs Guabirá — 22:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.48 м/с | 🌡️ 25.7°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -841,7 +841,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Manhattan vs Delaware State — 22:00 MSK — Manhattan </div><div style="font-size:10px;color:#a1a1aa">🌬️ 4.63 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 22.9°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Manhattan vs Delaware State — 22:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 4.63 м/с | 🌡️ 22.9°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -867,7 +867,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Benfica vs Estoril — 22:15 MSK — Benfica </div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.09 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 18.0°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Benfica vs Estoril — 22:15 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.09 м/с | 🌡️ 18.0°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -893,7 +893,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Braga vs Vitória de Guimaraes — 22:15 MSK — Braga </div><div style="font-size:10px;color:#a1a1aa">🌬️ 1.47 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 15.1°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Braga vs Vitória de Guimaraes — 22:15 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 1.47 м/с | 🌡️ 15.1°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -919,7 +919,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Barcelona vs Rayo Vallecano — 22:30 MSK — Barcelona </div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.6 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 23.4°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Barcelona vs Rayo Vallecano — 22:30 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.6 м/с | 🌡️ 23.3°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -927,7 +927,7 @@
 <div class=factor>Кроссы <b>14</b> • Точность <b>32%</b> • eff <b>4.5</b> • PPDA <b>9.1</b> • Низкий блок <b>55%</b></div>
 </div>
 <div class=factor-group><h4>🌪️ Физика 25 — OpenWeatherMap по координатам <span style="color:#ff8888">RANDOM 2-13 надо координаты Bernabeu 40.4530,-3.6883</span></h4>
-<div class=factor>Ветер <b>3.6 м/с</b> • Дождь <b>0мм</b> • Темп <b>23.4°C</b> — Barcelona нет координат — добавь в STADIUM_COORDS — вручную для Egersund vs Asane 13+4 надо автоматом</div>
+<div class=factor>Ветер <b>3.6 м/с</b> • Дождь <b>0мм</b> • Темп <b>23.3°C</b> — Barcelona нет координат — добавь в STADIUM_COORDS — вручную для Egersund vs Asane 13+4 надо автоматом</div>
 </div>
 <div class=factor-group><h4>👨‍⚖️ Судья 15 — Transfermarkt + Sofascore <span style="color:#ff8888">RANDOM 3.2-5.2 ЖК — надо реальный реф</span></h4>
 <div class=factor>Судья <b>нет</b> • Ср ЖК <b>3.8</b> • Строгость <b>средний</b> • Фолов <b>26</b> — рандом 3.2-5.2 ЖК — надо реальный реф на матч — https://www.transfermarkt.com/.../schiedsrichter</div>
@@ -945,7 +945,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — RC Celta Fortuna vs Castellón — 22:30 MSK — RC Celta Fortuna </div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.0 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 18.0°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — RC Celta Fortuna vs Castellón — 22:30 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.0 м/с | 🌡️ 18.0°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -971,7 +971,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Atlético Grau vs Melgar — 23:00 MSK — Atlético Grau </div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.0 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 18.0°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Atlético Grau vs Melgar — 23:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.0 м/с | 🌡️ 18.0°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -997,7 +997,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Siena vs Northeastern — 00:00 MSK — Siena </div><div style="font-size:10px;color:#a1a1aa">🌬️ 0.79 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 20.1°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Siena vs Northeastern — 00:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 0.79 м/с | 🌡️ 20.1°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -1023,7 +1023,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Defensa y Justicia vs Platense — 01:00 MSK — Defensa y Justicia </div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.0 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 18.0°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Defensa y Justicia vs Platense — 01:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.0 м/с | 🌡️ 18.0°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -1049,7 +1049,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Estudiantes de La Plata vs Newell's Old Boys — 01:00 MSK — Estudiantes de La Plata </div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.0 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 18.0°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Estudiantes de La Plata vs Newell's Old Boys — 01:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.0 м/с | 🌡️ 18.0°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -1075,7 +1075,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Los Andes vs Acassuso — 01:00 MSK — Los Andes </div><div style="font-size:10px;color:#a1a1aa">🌬️ 1.16 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 9.4°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Los Andes vs Acassuso — 01:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 1.16 м/с | 🌡️ 9.4°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -1083,7 +1083,7 @@
 <div class=factor>Кроссы <b>14</b> • Точность <b>32%</b> • eff <b>4.5</b> • PPDA <b>9.1</b> • Низкий блок <b>55%</b></div>
 </div>
 <div class=factor-group><h4>🌪️ Физика 25 — OpenWeatherMap по координатам <span style="color:#ff8888">RANDOM 2-13 надо координаты Bernabeu 40.4530,-3.6883</span></h4>
-<div class=factor>Ветер <b>1.16 м/с</b> • Дождь <b>3.16мм</b> • Темп <b>9.4°C</b> — Los Andes нет координат — добавь в STADIUM_COORDS — вручную для Egersund vs Asane 13+4 надо автоматом</div>
+<div class=factor>Ветер <b>1.16 м/с</b> • Дождь <b>4.86мм</b> • Темп <b>9.4°C</b> — Los Andes нет координат — добавь в STADIUM_COORDS — вручную для Egersund vs Asane 13+4 надо автоматом</div>
 </div>
 <div class=factor-group><h4>👨‍⚖️ Судья 15 — Transfermarkt + Sofascore <span style="color:#ff8888">RANDOM 3.2-5.2 ЖК — надо реальный реф</span></h4>
 <div class=factor>Судья <b>нет</b> • Ср ЖК <b>3.8</b> • Строгость <b>средний</b> • Фолов <b>26</b> — рандом 3.2-5.2 ЖК — надо реальный реф на матч — https://www.transfermarkt.com/.../schiedsrichter</div>
@@ -1093,15 +1093,15 @@
 </div>
 </div>
 <div class=expert-note><b>🔗 Связанные цепочки — как реальный эксперт (130+ факторов связанных, не детсад ТМ 8.5/4.5/2.5):</b><br>
-<div style="margin:6px 0"><span class=linked>1.</span> Физика рандом — надо координаты как Bernabeu 40.4530,-3.6883 — сейчас 1.16 м/с рандом</div><div style="margin:6px 0"><span class=linked>2.</span> Тактика рандом — надо парсить https://fbref.com/en/comps/12/La-Liga-Stats Team Stats — сейчас фланги 65% рандом, надо реальные 78% у Реала</div><div style="margin:6px 0"><span class=linked>3.</span> Фланги 65% + низкий блок 55% + сейвы 76% + кросс точность 32% = eff 4.5 — кроссы не долетают → ТМ угловых, если PPDA 9.1 высокий → ТБ</div><div style="margin:6px 0"><span class=linked>4.</span> Ветер 1.16 м/с + дождь 3.16мм + поле убитое — кроссы не долетают: -4.5 угловых, -1.0 ЖК, -0.75 xG — как Egersund-Åsane ОБОС</div>
+<div style="margin:6px 0"><span class=linked>1.</span> Физика рандом — надо координаты как Bernabeu 40.4530,-3.6883 — сейчас 1.16 м/с рандом</div><div style="margin:6px 0"><span class=linked>2.</span> Тактика рандом — надо парсить https://fbref.com/en/comps/12/La-Liga-Stats Team Stats — сейчас фланги 65% рандом, надо реальные 78% у Реала</div><div style="margin:6px 0"><span class=linked>3.</span> Фланги 65% + низкий блок 55% + сейвы 76% + кросс точность 32% = eff 4.5 — кроссы не долетают → ТМ угловых, если PPDA 9.1 высокий → ТБ</div><div style="margin:6px 0"><span class=linked>4.</span> Ветер 1.16 м/с + дождь 4.86мм + поле убитое — кроссы не долетают: -4.5 угловых, -1.0 ЖК, -0.75 xG — как Egersund-Åsane ОБОС</div>
 </div>
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:10px;margin-top:10px">
-<div class=pick><div style="display:flex;justify-content:space-between"><span>🚩 Угловые - 130+ факторов</span><span style="background:#ffcc00;color:#000;font-weight:800;padding:2px 8px;border-radius:999px;font-size:10px">1.9</span></div><div style="font-size:13px;font-weight:800;color:#ffcc00;margin:4px 0">ТБ 10.5 (10.3)</div><div style="font-size:10px;color:#a1a1aa">Фланги 65% RANDOM + eff 4.5 + PPDA 9.1 + блок 55% + ветер 1.16 + дождь 3.16</div><div style="margin-top:6px"><div class=reason><span>•</span> Фланги 65% база 65% +0.0</div><div class=reason><span>•</span> eff 4.5 база 10 2.2</div><div class=reason><span>•</span> Ветер 1.16 рандом</div></div></div><div class=pick><div style="display:flex;justify-content:space-between"><span>🟨 ЖК - 130+ факторов</span><span style="background:#ffcc00;color:#000;font-weight:800;padding:2px 8px;border-radius:999px;font-size:10px">1.85</span></div><div style="font-size:13px;font-weight:800;color:#ffcc00;margin:4px 0">ТМ 4.5 (3.8)</div><div style="font-size:10px;color:#a1a1aa">Судья средний 3.8 RANDOM 3.2-5.2 + дерби 0/5</div><div style="margin-top:6px"><div class=reason><span>•</span> Реф 3.8 RANDOM</div><div class=reason><span>•</span> Дерби 0/5</div></div></div><div class=pick><div style="display:flex;justify-content:space-between"><span>⚽ Голы - 130+ факторов</span><span style="background:#ffcc00;color:#000;font-weight:800;padding:2px 8px;border-radius:999px;font-size:10px">1.85</span></div><div style="font-size:13px;font-weight:800;color:#ffcc00;margin:4px 0">ТМ 2.5 (1.68)</div><div style="font-size:10px;color:#a1a1aa">xG 1.4 RANDOM 1.8-3.0 vs xGA 1.1</div><div style="margin-top:6px"><div class=reason><span>•</span> xG 1.4 RANDOM</div><div class=reason><span>•</span> H2H 2.8</div></div></div>
+<div class=pick><div style="display:flex;justify-content:space-between"><span>🚩 Угловые - 130+ факторов</span><span style="background:#ffcc00;color:#000;font-weight:800;padding:2px 8px;border-radius:999px;font-size:10px">1.9</span></div><div style="font-size:13px;font-weight:800;color:#ffcc00;margin:4px 0">ТБ 9.5 (9.9)</div><div style="font-size:10px;color:#a1a1aa">Фланги 65% RANDOM + eff 4.5 + PPDA 9.1 + блок 55% + ветер 1.16 + дождь 4.86</div><div style="margin-top:6px"><div class=reason><span>•</span> Фланги 65% база 65% +0.0</div><div class=reason><span>•</span> eff 4.5 база 10 2.2</div><div class=reason><span>•</span> Ветер 1.16 рандом</div></div></div><div class=pick><div style="display:flex;justify-content:space-between"><span>🟨 ЖК - 130+ факторов</span><span style="background:#ffcc00;color:#000;font-weight:800;padding:2px 8px;border-radius:999px;font-size:10px">1.85</span></div><div style="font-size:13px;font-weight:800;color:#ffcc00;margin:4px 0">ТМ 4.5 (3.8)</div><div style="font-size:10px;color:#a1a1aa">Судья средний 3.8 RANDOM 3.2-5.2 + дерби 0/5</div><div style="margin-top:6px"><div class=reason><span>•</span> Реф 3.8 RANDOM</div><div class=reason><span>•</span> Дерби 0/5</div></div></div><div class=pick><div style="display:flex;justify-content:space-between"><span>⚽ Голы - 130+ факторов</span><span style="background:#ffcc00;color:#000;font-weight:800;padding:2px 8px;border-radius:999px;font-size:10px">1.85</span></div><div style="font-size:13px;font-weight:800;color:#ffcc00;margin:4px 0">ТМ 2.5 (1.68)</div><div style="font-size:10px;color:#a1a1aa">xG 1.4 RANDOM 1.8-3.0 vs xGA 1.1</div><div style="margin-top:6px"><div class=reason><span>•</span> xG 1.4 RANDOM</div><div class=reason><span>•</span> H2H 2.8</div></div></div>
 </div>
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Comunicaciones vs Deportivo Merlo — 01:00 MSK — Comunicaciones </div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.0 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 18.0°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Comunicaciones vs Deportivo Merlo — 01:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.0 м/с | 🌡️ 18.0°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -1127,7 +1127,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Army vs Yale — 01:00 MSK — Army </div><div style="font-size:10px;color:#a1a1aa">🌬️ 1.07 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 22.9°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Army vs Yale — 01:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 1.07 м/с | 🌡️ 22.9°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -1153,7 +1153,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Bowling Green vs Wake Forest — 01:00 MSK — Bowling Green </div><div style="font-size:10px;color:#a1a1aa">🌬️ 0.0 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 26.0°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Bowling Green vs Wake Forest — 01:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 0.0 м/с | 🌡️ 26.0°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -1179,7 +1179,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Butler vs Memphis — 01:00 MSK — Butler </div><div style="font-size:10px;color:#a1a1aa">🌬️ 0.0 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 21.8°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Butler vs Memphis — 01:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 0.0 м/с | 🌡️ 21.8°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -1205,7 +1205,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Fairleigh Dickinson vs Rider — 01:00 MSK — Fairleigh Dickinson </div><div style="font-size:10px;color:#a1a1aa">🌬️ 0.5 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 12.3°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Fairleigh Dickinson vs Rider — 01:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 0.5 м/с | 🌡️ 12.3°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -1231,7 +1231,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — St Bonaventure vs Niagara — 01:00 MSK — St Bonaventure </div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.0 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 18.0°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — St Bonaventure vs Niagara — 01:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.0 м/с | 🌡️ 18.0°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -1257,7 +1257,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Virginia vs Florida Gulf Coast — 01:03 MSK — Virginia </div><div style="font-size:10px;color:#a1a1aa">🌬️ 1.54 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 23.4°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Virginia vs Florida Gulf Coast — 01:03 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 1.54 м/с | 🌡️ 23.3°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -1265,7 +1265,7 @@
 <div class=factor>Кроссы <b>14</b> • Точность <b>32%</b> • eff <b>4.5</b> • PPDA <b>9.1</b> • Низкий блок <b>55%</b></div>
 </div>
 <div class=factor-group><h4>🌪️ Физика 25 — OpenWeatherMap по координатам <span style="color:#ff8888">RANDOM 2-13 надо координаты Bernabeu 40.4530,-3.6883</span></h4>
-<div class=factor>Ветер <b>1.54 м/с</b> • Дождь <b>0мм</b> • Темп <b>23.4°C</b> — Virginia нет координат — добавь в STADIUM_COORDS — вручную для Egersund vs Asane 13+4 надо автоматом</div>
+<div class=factor>Ветер <b>1.54 м/с</b> • Дождь <b>0мм</b> • Темп <b>23.3°C</b> — Virginia нет координат — добавь в STADIUM_COORDS — вручную для Egersund vs Asane 13+4 надо автоматом</div>
 </div>
 <div class=factor-group><h4>👨‍⚖️ Судья 15 — Transfermarkt + Sofascore <span style="color:#ff8888">RANDOM 3.2-5.2 ЖК — надо реальный реф</span></h4>
 <div class=factor>Судья <b>нет</b> • Ср ЖК <b>3.8</b> • Строгость <b>средний</b> • Фолов <b>26</b> — рандом 3.2-5.2 ЖК — надо реальный реф на матч — https://www.transfermarkt.com/.../schiedsrichter</div>
@@ -1283,7 +1283,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Unión La Calera vs La Serena — 01:15 MSK — Unión La Calera </div><div style="font-size:10px;color:#a1a1aa">🌬️ 4.66 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 13.2°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Unión La Calera vs La Serena — 01:15 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 4.66 м/с | 🌡️ 13.2°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -1309,7 +1309,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Fortaleza vs Operário PR — 01:30 MSK — Fortaleza </div><div style="font-size:10px;color:#a1a1aa">🌬️ 7.2 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 27.1°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Fortaleza vs Operário PR — 01:30 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 7.2 м/с | 🌡️ 27.1°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -1335,7 +1335,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — UCV FC vs Rayo Zuliano — 01:30 MSK — UCV FC </div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.0 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 18.0°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — UCV FC vs Rayo Zuliano — 01:30 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.0 м/с | 🌡️ 18.0°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -1361,7 +1361,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Remo vs Coritiba — 02:00 MSK — Remo </div><div style="font-size:10px;color:#a1a1aa">🌬️ 0.45 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 24.6°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Remo vs Coritiba — 02:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 0.89 м/с | 🌡️ 24.6°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -1369,7 +1369,7 @@
 <div class=factor>Кроссы <b>14</b> • Точность <b>32%</b> • eff <b>4.5</b> • PPDA <b>9.1</b> • Низкий блок <b>55%</b></div>
 </div>
 <div class=factor-group><h4>🌪️ Физика 25 — OpenWeatherMap по координатам <span style="color:#ff8888">RANDOM 2-13 надо координаты Bernabeu 40.4530,-3.6883</span></h4>
-<div class=factor>Ветер <b>0.45 м/с</b> • Дождь <b>0мм</b> • Темп <b>24.6°C</b> — Remo нет координат — добавь в STADIUM_COORDS — вручную для Egersund vs Asane 13+4 надо автоматом</div>
+<div class=factor>Ветер <b>0.89 м/с</b> • Дождь <b>0мм</b> • Темп <b>24.6°C</b> — Remo нет координат — добавь в STADIUM_COORDS — вручную для Egersund vs Asane 13+4 надо автоматом</div>
 </div>
 <div class=factor-group><h4>👨‍⚖️ Судья 15 — Transfermarkt + Sofascore <span style="color:#ff8888">RANDOM 3.2-5.2 ЖК — надо реальный реф</span></h4>
 <div class=factor>Судья <b>нет</b> • Ср ЖК <b>3.8</b> • Строгость <b>средний</b> • Фолов <b>26</b> — рандом 3.2-5.2 ЖК — надо реальный реф на матч — https://www.transfermarkt.com/.../schiedsrichter</div>
@@ -1379,15 +1379,15 @@
 </div>
 </div>
 <div class=expert-note><b>🔗 Связанные цепочки — как реальный эксперт (130+ факторов связанных, не детсад ТМ 8.5/4.5/2.5):</b><br>
-<div style="margin:6px 0"><span class=linked>1.</span> Физика рандом — надо координаты как Bernabeu 40.4530,-3.6883 — сейчас 0.45 м/с рандом</div><div style="margin:6px 0"><span class=linked>2.</span> Тактика рандом — надо парсить https://fbref.com/en/comps/12/La-Liga-Stats Team Stats — сейчас фланги 65% рандом, надо реальные 78% у Реала</div><div style="margin:6px 0"><span class=linked>3.</span> Фланги 65% + низкий блок 55% + сейвы 81% + кросс точность 32% = eff 4.5 — кроссы не долетают → ТМ угловых, если PPDA 9.1 высокий → ТБ</div><div style="margin:6px 0"><span class=linked>4.</span> Ветер 0.45 м/с + дождь 0мм + поле убитое — кроссы не долетают: -4.5 угловых, -1.0 ЖК, -0.75 xG — как Egersund-Åsane ОБОС</div>
+<div style="margin:6px 0"><span class=linked>1.</span> Физика рандом — надо координаты как Bernabeu 40.4530,-3.6883 — сейчас 0.89 м/с рандом</div><div style="margin:6px 0"><span class=linked>2.</span> Тактика рандом — надо парсить https://fbref.com/en/comps/12/La-Liga-Stats Team Stats — сейчас фланги 65% рандом, надо реальные 78% у Реала</div><div style="margin:6px 0"><span class=linked>3.</span> Фланги 65% + низкий блок 55% + сейвы 81% + кросс точность 32% = eff 4.5 — кроссы не долетают → ТМ угловых, если PPDA 9.1 высокий → ТБ</div><div style="margin:6px 0"><span class=linked>4.</span> Ветер 0.89 м/с + дождь 0мм + поле убитое — кроссы не долетают: -4.5 угловых, -1.0 ЖК, -0.75 xG — как Egersund-Åsane ОБОС</div>
 </div>
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:10px;margin-top:10px">
-<div class=pick><div style="display:flex;justify-content:space-between"><span>🚩 Угловые - 130+ факторов</span><span style="background:#ffcc00;color:#000;font-weight:800;padding:2px 8px;border-radius:999px;font-size:10px">1.9</span></div><div style="font-size:13px;font-weight:800;color:#ffcc00;margin:4px 0">ТБ 10.5 (11.3)</div><div style="font-size:10px;color:#a1a1aa">Фланги 65% RANDOM + eff 4.5 + PPDA 9.1 + блок 55% + ветер 0.45 + дождь 0</div><div style="margin-top:6px"><div class=reason><span>•</span> Фланги 65% база 65% +0.0</div><div class=reason><span>•</span> eff 4.5 база 10 2.2</div><div class=reason><span>•</span> Ветер 0.45 рандом</div></div></div><div class=pick><div style="display:flex;justify-content:space-between"><span>🟨 ЖК - 130+ факторов</span><span style="background:#ffcc00;color:#000;font-weight:800;padding:2px 8px;border-radius:999px;font-size:10px">1.85</span></div><div style="font-size:13px;font-weight:800;color:#ffcc00;margin:4px 0">ТМ 4.5 (3.8)</div><div style="font-size:10px;color:#a1a1aa">Судья средний 3.8 RANDOM 3.2-5.2 + дерби 0/5</div><div style="margin-top:6px"><div class=reason><span>•</span> Реф 3.8 RANDOM</div><div class=reason><span>•</span> Дерби 0/5</div></div></div><div class=pick><div style="display:flex;justify-content:space-between"><span>⚽ Голы - 130+ факторов</span><span style="background:#ffcc00;color:#000;font-weight:800;padding:2px 8px;border-radius:999px;font-size:10px">1.85</span></div><div style="font-size:13px;font-weight:800;color:#ffcc00;margin:4px 0">ТМ 2.5 (1.68)</div><div style="font-size:10px;color:#a1a1aa">xG 1.4 RANDOM 1.8-3.0 vs xGA 1.1</div><div style="margin-top:6px"><div class=reason><span>•</span> xG 1.4 RANDOM</div><div class=reason><span>•</span> H2H 3.3</div></div></div>
+<div class=pick><div style="display:flex;justify-content:space-between"><span>🚩 Угловые - 130+ факторов</span><span style="background:#ffcc00;color:#000;font-weight:800;padding:2px 8px;border-radius:999px;font-size:10px">1.9</span></div><div style="font-size:13px;font-weight:800;color:#ffcc00;margin:4px 0">ТБ 10.5 (11.2)</div><div style="font-size:10px;color:#a1a1aa">Фланги 65% RANDOM + eff 4.5 + PPDA 9.1 + блок 55% + ветер 0.89 + дождь 0</div><div style="margin-top:6px"><div class=reason><span>•</span> Фланги 65% база 65% +0.0</div><div class=reason><span>•</span> eff 4.5 база 10 2.2</div><div class=reason><span>•</span> Ветер 0.89 рандом</div></div></div><div class=pick><div style="display:flex;justify-content:space-between"><span>🟨 ЖК - 130+ факторов</span><span style="background:#ffcc00;color:#000;font-weight:800;padding:2px 8px;border-radius:999px;font-size:10px">1.85</span></div><div style="font-size:13px;font-weight:800;color:#ffcc00;margin:4px 0">ТМ 4.5 (3.8)</div><div style="font-size:10px;color:#a1a1aa">Судья средний 3.8 RANDOM 3.2-5.2 + дерби 0/5</div><div style="margin-top:6px"><div class=reason><span>•</span> Реф 3.8 RANDOM</div><div class=reason><span>•</span> Дерби 0/5</div></div></div><div class=pick><div style="display:flex;justify-content:space-between"><span>⚽ Голы - 130+ факторов</span><span style="background:#ffcc00;color:#000;font-weight:800;padding:2px 8px;border-radius:999px;font-size:10px">1.85</span></div><div style="font-size:13px;font-weight:800;color:#ffcc00;margin:4px 0">ТМ 2.5 (1.68)</div><div style="font-size:10px;color:#a1a1aa">xG 1.4 RANDOM 1.8-3.0 vs xGA 1.1</div><div style="margin-top:6px"><div class=reason><span>•</span> xG 1.4 RANDOM</div><div class=reason><span>•</span> H2H 3.3</div></div></div>
 </div>
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Deportivo Pasto vs Deportivo Pereira — 02:00 MSK — Deportivo Pasto </div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.0 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 18.0°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Deportivo Pasto vs Deportivo Pereira — 02:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.0 м/с | 🌡️ 18.0°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -1413,7 +1413,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Dayton vs Purdue Fort Wayne — 02:00 MSK — Dayton </div><div style="font-size:10px;color:#a1a1aa">🌬️ 2.57 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 22.4°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Dayton vs Purdue Fort Wayne — 02:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 2.57 м/с | 🌡️ 22.5°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -1421,7 +1421,7 @@
 <div class=factor>Кроссы <b>14</b> • Точность <b>32%</b> • eff <b>4.5</b> • PPDA <b>9.1</b> • Низкий блок <b>55%</b></div>
 </div>
 <div class=factor-group><h4>🌪️ Физика 25 — OpenWeatherMap по координатам <span style="color:#ff8888">RANDOM 2-13 надо координаты Bernabeu 40.4530,-3.6883</span></h4>
-<div class=factor>Ветер <b>2.57 м/с</b> • Дождь <b>0мм</b> • Темп <b>22.4°C</b> — Dayton нет координат — добавь в STADIUM_COORDS — вручную для Egersund vs Asane 13+4 надо автоматом</div>
+<div class=factor>Ветер <b>2.57 м/с</b> • Дождь <b>0мм</b> • Темп <b>22.5°C</b> — Dayton нет координат — добавь в STADIUM_COORDS — вручную для Egersund vs Asane 13+4 надо автоматом</div>
 </div>
 <div class=factor-group><h4>👨‍⚖️ Судья 15 — Transfermarkt + Sofascore <span style="color:#ff8888">RANDOM 3.2-5.2 ЖК — надо реальный реф</span></h4>
 <div class=factor>Судья <b>нет</b> • Ср ЖК <b>3.8</b> • Строгость <b>средний</b> • Фолов <b>26</b> — рандом 3.2-5.2 ЖК — надо реальный реф на матч — https://www.transfermarkt.com/.../schiedsrichter</div>
@@ -1439,7 +1439,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Florida International vs St. Thomas (FL) — 02:00 MSK — Florida International </div><div style="font-size:10px;color:#a1a1aa">🌬️ 1.54 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 23.8°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Florida International vs St. Thomas (FL) — 02:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 1.54 м/с | 🌡️ 23.8°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -1465,7 +1465,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Louisville vs Indiana — 02:00 MSK — Louisville </div><div style="font-size:10px;color:#a1a1aa">🌬️ 0.0 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 25.4°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Louisville vs Indiana — 02:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 0.0 м/с | 🌡️ 25.4°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -1491,7 +1491,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Mercer vs UAB — 02:00 MSK — Mercer </div><div style="font-size:10px;color:#a1a1aa">🌬️ 0.45 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 20.4°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Mercer vs UAB — 02:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 0.45 м/с | 🌡️ 20.4°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -1517,7 +1517,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Mount St. Mary's vs Saint Joseph's — 02:00 MSK — Mount St. Mary's </div><div style="font-size:10px;color:#a1a1aa">🌬️ 2.45 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 12.9°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Mount St. Mary's vs Saint Joseph's — 02:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 2.45 м/с | 🌡️ 12.9°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -1543,7 +1543,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Princeton vs Portland — 02:00 MSK — Princeton </div><div style="font-size:10px;color:#a1a1aa">🌬️ 2.06 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 26.8°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Princeton vs Portland — 02:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 2.06 м/с | 🌡️ 26.8°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -1569,7 +1569,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Providence vs Boston University — 02:00 MSK — Providence </div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.09 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 20.5°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Providence vs Boston University — 02:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.09 м/с | 🌡️ 20.6°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -1577,7 +1577,7 @@
 <div class=factor>Кроссы <b>14</b> • Точность <b>32%</b> • eff <b>4.5</b> • PPDA <b>9.1</b> • Низкий блок <b>55%</b></div>
 </div>
 <div class=factor-group><h4>🌪️ Физика 25 — OpenWeatherMap по координатам <span style="color:#ff8888">RANDOM 2-13 надо координаты Bernabeu 40.4530,-3.6883</span></h4>
-<div class=factor>Ветер <b>3.09 м/с</b> • Дождь <b>0мм</b> • Темп <b>20.5°C</b> — Providence нет координат — добавь в STADIUM_COORDS — вручную для Egersund vs Asane 13+4 надо автоматом</div>
+<div class=factor>Ветер <b>3.09 м/с</b> • Дождь <b>0мм</b> • Темп <b>20.6°C</b> — Providence нет координат — добавь в STADIUM_COORDS — вручную для Egersund vs Asane 13+4 надо автоматом</div>
 </div>
 <div class=factor-group><h4>👨‍⚖️ Судья 15 — Transfermarkt + Sofascore <span style="color:#ff8888">RANDOM 3.2-5.2 ЖК — надо реальный реф</span></h4>
 <div class=factor>Судья <b>нет</b> • Ср ЖК <b>3.8</b> • Строгость <b>средний</b> • Фолов <b>26</b> — рандом 3.2-5.2 ЖК — надо реальный реф на матч — https://www.transfermarkt.com/.../schiedsrichter</div>
@@ -1595,7 +1595,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Syracuse vs Iona — 02:00 MSK — Syracuse </div><div style="font-size:10px;color:#a1a1aa">🌬️ 0.89 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 25.2°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Syracuse vs Iona — 02:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 1.34 м/с | 🌡️ 25.2°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -1603,7 +1603,7 @@
 <div class=factor>Кроссы <b>14</b> • Точность <b>32%</b> • eff <b>4.5</b> • PPDA <b>9.1</b> • Низкий блок <b>55%</b></div>
 </div>
 <div class=factor-group><h4>🌪️ Физика 25 — OpenWeatherMap по координатам <span style="color:#ff8888">RANDOM 2-13 надо координаты Bernabeu 40.4530,-3.6883</span></h4>
-<div class=factor>Ветер <b>0.89 м/с</b> • Дождь <b>0мм</b> • Темп <b>25.2°C</b> — Syracuse нет координат — добавь в STADIUM_COORDS — вручную для Egersund vs Asane 13+4 надо автоматом</div>
+<div class=factor>Ветер <b>1.34 м/с</b> • Дождь <b>0мм</b> • Темп <b>25.2°C</b> — Syracuse нет координат — добавь в STADIUM_COORDS — вручную для Egersund vs Asane 13+4 надо автоматом</div>
 </div>
 <div class=factor-group><h4>👨‍⚖️ Судья 15 — Transfermarkt + Sofascore <span style="color:#ff8888">RANDOM 3.2-5.2 ЖК — надо реальный реф</span></h4>
 <div class=factor>Судья <b>нет</b> • Ср ЖК <b>3.8</b> • Строгость <b>средний</b> • Фолов <b>26</b> — рандом 3.2-5.2 ЖК — надо реальный реф на матч — https://www.transfermarkt.com/.../schiedsrichter</div>
@@ -1613,15 +1613,15 @@
 </div>
 </div>
 <div class=expert-note><b>🔗 Связанные цепочки — как реальный эксперт (130+ факторов связанных, не детсад ТМ 8.5/4.5/2.5):</b><br>
-<div style="margin:6px 0"><span class=linked>1.</span> Физика рандом — надо координаты как Bernabeu 40.4530,-3.6883 — сейчас 0.89 м/с рандом</div><div style="margin:6px 0"><span class=linked>2.</span> Тактика рандом — надо парсить https://fbref.com/en/comps/12/La-Liga-Stats Team Stats — сейчас фланги 65% рандом, надо реальные 78% у Реала</div><div style="margin:6px 0"><span class=linked>3.</span> Фланги 65% + низкий блок 55% + сейвы 70% + кросс точность 32% = eff 4.5 — кроссы не долетают → ТМ угловых, если PPDA 9.1 высокий → ТБ</div><div style="margin:6px 0"><span class=linked>4.</span> Ветер 0.89 м/с + дождь 0мм + поле тяжелое — кроссы не долетают: -4.5 угловых, -1.0 ЖК, -0.75 xG — как Egersund-Åsane ОБОС</div>
+<div style="margin:6px 0"><span class=linked>1.</span> Физика рандом — надо координаты как Bernabeu 40.4530,-3.6883 — сейчас 1.34 м/с рандом</div><div style="margin:6px 0"><span class=linked>2.</span> Тактика рандом — надо парсить https://fbref.com/en/comps/12/La-Liga-Stats Team Stats — сейчас фланги 65% рандом, надо реальные 78% у Реала</div><div style="margin:6px 0"><span class=linked>3.</span> Фланги 65% + низкий блок 55% + сейвы 70% + кросс точность 32% = eff 4.5 — кроссы не долетают → ТМ угловых, если PPDA 9.1 высокий → ТБ</div><div style="margin:6px 0"><span class=linked>4.</span> Ветер 1.34 м/с + дождь 0мм + поле тяжелое — кроссы не долетают: -4.5 угловых, -1.0 ЖК, -0.75 xG — как Egersund-Åsane ОБОС</div>
 </div>
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:10px;margin-top:10px">
-<div class=pick><div style="display:flex;justify-content:space-between"><span>🚩 Угловые - 130+ факторов</span><span style="background:#ffcc00;color:#000;font-weight:800;padding:2px 8px;border-radius:999px;font-size:10px">1.9</span></div><div style="font-size:13px;font-weight:800;color:#ffcc00;margin:4px 0">ТБ 10.5 (11.2)</div><div style="font-size:10px;color:#a1a1aa">Фланги 65% RANDOM + eff 4.5 + PPDA 9.1 + блок 55% + ветер 0.89 + дождь 0</div><div style="margin-top:6px"><div class=reason><span>•</span> Фланги 65% база 65% +0.0</div><div class=reason><span>•</span> eff 4.5 база 10 2.2</div><div class=reason><span>•</span> Ветер 0.89 рандом</div></div></div><div class=pick><div style="display:flex;justify-content:space-between"><span>🟨 ЖК - 130+ факторов</span><span style="background:#ffcc00;color:#000;font-weight:800;padding:2px 8px;border-radius:999px;font-size:10px">1.85</span></div><div style="font-size:13px;font-weight:800;color:#ffcc00;margin:4px 0">ТМ 4.5 (3.8)</div><div style="font-size:10px;color:#a1a1aa">Судья средний 3.8 RANDOM 3.2-5.2 + дерби 0/5</div><div style="margin-top:6px"><div class=reason><span>•</span> Реф 3.8 RANDOM</div><div class=reason><span>•</span> Дерби 0/5</div></div></div><div class=pick><div style="display:flex;justify-content:space-between"><span>⚽ Голы - 130+ факторов</span><span style="background:#ffcc00;color:#000;font-weight:800;padding:2px 8px;border-radius:999px;font-size:10px">1.85</span></div><div style="font-size:13px;font-weight:800;color:#ffcc00;margin:4px 0">ТМ 2.5 (1.68)</div><div style="font-size:10px;color:#a1a1aa">xG 1.4 RANDOM 1.8-3.0 vs xGA 1.1</div><div style="margin-top:6px"><div class=reason><span>•</span> xG 1.4 RANDOM</div><div class=reason><span>•</span> H2H 2.0</div></div></div>
+<div class=pick><div style="display:flex;justify-content:space-between"><span>🚩 Угловые - 130+ факторов</span><span style="background:#ffcc00;color:#000;font-weight:800;padding:2px 8px;border-radius:999px;font-size:10px">1.9</span></div><div style="font-size:13px;font-weight:800;color:#ffcc00;margin:4px 0">ТБ 10.5 (11.0)</div><div style="font-size:10px;color:#a1a1aa">Фланги 65% RANDOM + eff 4.5 + PPDA 9.1 + блок 55% + ветер 1.34 + дождь 0</div><div style="margin-top:6px"><div class=reason><span>•</span> Фланги 65% база 65% +0.0</div><div class=reason><span>•</span> eff 4.5 база 10 2.2</div><div class=reason><span>•</span> Ветер 1.34 рандом</div></div></div><div class=pick><div style="display:flex;justify-content:space-between"><span>🟨 ЖК - 130+ факторов</span><span style="background:#ffcc00;color:#000;font-weight:800;padding:2px 8px;border-radius:999px;font-size:10px">1.85</span></div><div style="font-size:13px;font-weight:800;color:#ffcc00;margin:4px 0">ТМ 4.5 (3.8)</div><div style="font-size:10px;color:#a1a1aa">Судья средний 3.8 RANDOM 3.2-5.2 + дерби 0/5</div><div style="margin-top:6px"><div class=reason><span>•</span> Реф 3.8 RANDOM</div><div class=reason><span>•</span> Дерби 0/5</div></div></div><div class=pick><div style="display:flex;justify-content:space-between"><span>⚽ Голы - 130+ факторов</span><span style="background:#ffcc00;color:#000;font-weight:800;padding:2px 8px;border-radius:999px;font-size:10px">1.85</span></div><div style="font-size:13px;font-weight:800;color:#ffcc00;margin:4px 0">ТМ 2.5 (1.68)</div><div style="font-size:10px;color:#a1a1aa">xG 1.4 RANDOM 1.8-3.0 vs xGA 1.1</div><div style="margin-top:6px"><div class=reason><span>•</span> xG 1.4 RANDOM</div><div class=reason><span>•</span> H2H 2.0</div></div></div>
 </div>
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — UMBC vs George Washington — 02:00 MSK — UMBC </div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.0 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 18.0°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — UMBC vs George Washington — 02:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.0 м/с | 🌡️ 18.0°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -1647,7 +1647,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Academia Puerto Cabello vs Anzoátegui FC — 02:30 MSK — Academia Puerto Cabello </div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.09 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 12.0°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Academia Puerto Cabello vs Anzoátegui FC — 02:30 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.09 м/с | 🌡️ 12.0°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -1673,7 +1673,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Northwestern vs Xavier — 02:30 MSK — Northwestern </div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.0 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 18.0°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Northwestern vs Xavier — 02:30 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.0 м/с | 🌡️ 18.0°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -1699,7 +1699,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Notre Dame vs Harvard — 02:30 MSK — Notre Dame </div><div style="font-size:10px;color:#a1a1aa">🌬️ 8.83 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 20.6°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Notre Dame vs Harvard — 02:30 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 8.83 м/с | 🌡️ 20.6°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -1725,7 +1725,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Boston Legacy FC vs Angel City FC — 03:00 MSK — Boston Legacy FC </div><div style="font-size:10px;color:#a1a1aa">🌬️ 2.57 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 20.8°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Boston Legacy FC vs Angel City FC — 03:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 0.45 м/с | 🌡️ 20.7°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -1733,7 +1733,7 @@
 <div class=factor>Кроссы <b>14</b> • Точность <b>32%</b> • eff <b>4.5</b> • PPDA <b>9.1</b> • Низкий блок <b>55%</b></div>
 </div>
 <div class=factor-group><h4>🌪️ Физика 25 — OpenWeatherMap по координатам <span style="color:#ff8888">RANDOM 2-13 надо координаты Bernabeu 40.4530,-3.6883</span></h4>
-<div class=factor>Ветер <b>2.57 м/с</b> • Дождь <b>0мм</b> • Темп <b>20.8°C</b> — Boston Legacy FC нет координат — добавь в STADIUM_COORDS — вручную для Egersund vs Asane 13+4 надо автоматом</div>
+<div class=factor>Ветер <b>0.45 м/с</b> • Дождь <b>0мм</b> • Темп <b>20.7°C</b> — Boston Legacy FC нет координат — добавь в STADIUM_COORDS — вручную для Egersund vs Asane 13+4 надо автоматом</div>
 </div>
 <div class=factor-group><h4>👨‍⚖️ Судья 15 — Transfermarkt + Sofascore <span style="color:#ff8888">RANDOM 3.2-5.2 ЖК — надо реальный реф</span></h4>
 <div class=factor>Судья <b>нет</b> • Ср ЖК <b>3.8</b> • Строгость <b>средний</b> • Фолов <b>26</b> — рандом 3.2-5.2 ЖК — надо реальный реф на матч — https://www.transfermarkt.com/.../schiedsrichter</div>
@@ -1743,15 +1743,15 @@
 </div>
 </div>
 <div class=expert-note><b>🔗 Связанные цепочки — как реальный эксперт (130+ факторов связанных, не детсад ТМ 8.5/4.5/2.5):</b><br>
-<div style="margin:6px 0"><span class=linked>1.</span> Физика рандом — надо координаты как Bernabeu 40.4530,-3.6883 — сейчас 2.57 м/с рандом</div><div style="margin:6px 0"><span class=linked>2.</span> Тактика рандом — надо парсить https://fbref.com/en/comps/12/La-Liga-Stats Team Stats — сейчас фланги 65% рандом, надо реальные 78% у Реала</div><div style="margin:6px 0"><span class=linked>3.</span> Фланги 65% + низкий блок 55% + сейвы 61% + кросс точность 32% = eff 4.5 — кроссы не долетают → ТМ угловых, если PPDA 9.1 высокий → ТБ</div><div style="margin:6px 0"><span class=linked>4.</span> Ветер 2.57 м/с + дождь 0мм + поле убитое — кроссы не долетают: -4.5 угловых, -1.0 ЖК, -0.75 xG — как Egersund-Åsane ОБОС</div>
+<div style="margin:6px 0"><span class=linked>1.</span> Физика рандом — надо координаты как Bernabeu 40.4530,-3.6883 — сейчас 0.45 м/с рандом</div><div style="margin:6px 0"><span class=linked>2.</span> Тактика рандом — надо парсить https://fbref.com/en/comps/12/La-Liga-Stats Team Stats — сейчас фланги 65% рандом, надо реальные 78% у Реала</div><div style="margin:6px 0"><span class=linked>3.</span> Фланги 65% + низкий блок 55% + сейвы 61% + кросс точность 32% = eff 4.5 — кроссы не долетают → ТМ угловых, если PPDA 9.1 высокий → ТБ</div><div style="margin:6px 0"><span class=linked>4.</span> Ветер 0.45 м/с + дождь 0мм + поле убитое — кроссы не долетают: -4.5 угловых, -1.0 ЖК, -0.75 xG — как Egersund-Åsane ОБОС</div>
 </div>
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:10px;margin-top:10px">
-<div class=pick><div style="display:flex;justify-content:space-between"><span>🚩 Угловые - 130+ факторов</span><span style="background:#ffcc00;color:#000;font-weight:800;padding:2px 8px;border-radius:999px;font-size:10px">1.9</span></div><div style="font-size:13px;font-weight:800;color:#ffcc00;margin:4px 0">ТБ 10.5 (10.6)</div><div style="font-size:10px;color:#a1a1aa">Фланги 65% RANDOM + eff 4.5 + PPDA 9.1 + блок 55% + ветер 2.57 + дождь 0</div><div style="margin-top:6px"><div class=reason><span>•</span> Фланги 65% база 65% +0.0</div><div class=reason><span>•</span> eff 4.5 база 10 2.2</div><div class=reason><span>•</span> Ветер 2.57 рандом</div></div></div><div class=pick><div style="display:flex;justify-content:space-between"><span>🟨 ЖК - 130+ факторов</span><span style="background:#ffcc00;color:#000;font-weight:800;padding:2px 8px;border-radius:999px;font-size:10px">1.85</span></div><div style="font-size:13px;font-weight:800;color:#ffcc00;margin:4px 0">ТМ 4.5 (3.8)</div><div style="font-size:10px;color:#a1a1aa">Судья средний 3.8 RANDOM 3.2-5.2 + дерби 0/5</div><div style="margin-top:6px"><div class=reason><span>•</span> Реф 3.8 RANDOM</div><div class=reason><span>•</span> Дерби 0/5</div></div></div><div class=pick><div style="display:flex;justify-content:space-between"><span>⚽ Голы - 130+ факторов</span><span style="background:#ffcc00;color:#000;font-weight:800;padding:2px 8px;border-radius:999px;font-size:10px">1.85</span></div><div style="font-size:13px;font-weight:800;color:#ffcc00;margin:4px 0">ТМ 2.5 (1.68)</div><div style="font-size:10px;color:#a1a1aa">xG 1.4 RANDOM 1.8-3.0 vs xGA 1.1</div><div style="margin-top:6px"><div class=reason><span>•</span> xG 1.4 RANDOM</div><div class=reason><span>•</span> H2H 2.7</div></div></div>
+<div class=pick><div style="display:flex;justify-content:space-between"><span>🚩 Угловые - 130+ факторов</span><span style="background:#ffcc00;color:#000;font-weight:800;padding:2px 8px;border-radius:999px;font-size:10px">1.9</span></div><div style="font-size:13px;font-weight:800;color:#ffcc00;margin:4px 0">ТБ 10.5 (11.3)</div><div style="font-size:10px;color:#a1a1aa">Фланги 65% RANDOM + eff 4.5 + PPDA 9.1 + блок 55% + ветер 0.45 + дождь 0</div><div style="margin-top:6px"><div class=reason><span>•</span> Фланги 65% база 65% +0.0</div><div class=reason><span>•</span> eff 4.5 база 10 2.2</div><div class=reason><span>•</span> Ветер 0.45 рандом</div></div></div><div class=pick><div style="display:flex;justify-content:space-between"><span>🟨 ЖК - 130+ факторов</span><span style="background:#ffcc00;color:#000;font-weight:800;padding:2px 8px;border-radius:999px;font-size:10px">1.85</span></div><div style="font-size:13px;font-weight:800;color:#ffcc00;margin:4px 0">ТМ 4.5 (3.8)</div><div style="font-size:10px;color:#a1a1aa">Судья средний 3.8 RANDOM 3.2-5.2 + дерби 0/5</div><div style="margin-top:6px"><div class=reason><span>•</span> Реф 3.8 RANDOM</div><div class=reason><span>•</span> Дерби 0/5</div></div></div><div class=pick><div style="display:flex;justify-content:space-between"><span>⚽ Голы - 130+ факторов</span><span style="background:#ffcc00;color:#000;font-weight:800;padding:2px 8px;border-radius:999px;font-size:10px">1.85</span></div><div style="font-size:13px;font-weight:800;color:#ffcc00;margin:4px 0">ТМ 2.5 (1.68)</div><div style="font-size:10px;color:#a1a1aa">xG 1.4 RANDOM 1.8-3.0 vs xGA 1.1</div><div style="margin-top:6px"><div class=reason><span>•</span> xG 1.4 RANDOM</div><div class=reason><span>•</span> H2H 2.7</div></div></div>
 </div>
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Gimnasia y Esgrima (Jujuy) vs Agropecuario — 03:00 MSK — Gimnasia y Esgrima (Jujuy) </div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.0 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 18.0°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Gimnasia y Esgrima (Jujuy) vs Agropecuario — 03:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.0 м/с | 🌡️ 18.0°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -1777,7 +1777,7 @@
 </div></div>
 
 <div class=league style="border-color:#232323">
-<div class=league-head><div><div class=league-title> — Real Tomayapo vs Independiente Petrolero — 03:00 MSK — Real Tomayapo </div><div style="font-size:10px;color:#a1a1aa">🌬️ 8.13 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 27.7°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 1/4</div></div><div><span class=badge fake>REAL 1/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Real Tomayapo vs Independiente Petrolero — 03:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 8.13 м/с | 🌡️ 27.7°C | Судья — | REAL 1/4</div></div><div><span class=badge fake>REAL 1/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#00ff88">REAL 78%</span></h4>
@@ -1803,7 +1803,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — SMU vs Houston Christian — 03:00 MSK — SMU </div><div style="font-size:10px;color:#a1a1aa">🌬️ 2.9 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 17.5°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — SMU vs Houston Christian — 03:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 2.9 м/с | 🌡️ 17.5°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -1829,7 +1829,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Tulsa vs Creighton — 03:00 MSK — Tulsa </div><div style="font-size:10px;color:#a1a1aa">🌬️ 4.63 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 29.4°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Tulsa vs Creighton — 03:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 0.45 м/с | 🌡️ 29.2°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -1837,7 +1837,7 @@
 <div class=factor>Кроссы <b>14</b> • Точность <b>32%</b> • eff <b>4.5</b> • PPDA <b>9.1</b> • Низкий блок <b>55%</b></div>
 </div>
 <div class=factor-group><h4>🌪️ Физика 25 — OpenWeatherMap по координатам <span style="color:#ff8888">RANDOM 2-13 надо координаты Bernabeu 40.4530,-3.6883</span></h4>
-<div class=factor>Ветер <b>4.63 м/с</b> • Дождь <b>0мм</b> • Темп <b>29.4°C</b> — Tulsa нет координат — добавь в STADIUM_COORDS — вручную для Egersund vs Asane 13+4 надо автоматом</div>
+<div class=factor>Ветер <b>0.45 м/с</b> • Дождь <b>0мм</b> • Темп <b>29.2°C</b> — Tulsa нет координат — добавь в STADIUM_COORDS — вручную для Egersund vs Asane 13+4 надо автоматом</div>
 </div>
 <div class=factor-group><h4>👨‍⚖️ Судья 15 — Transfermarkt + Sofascore <span style="color:#ff8888">RANDOM 3.2-5.2 ЖК — надо реальный реф</span></h4>
 <div class=factor>Судья <b>нет</b> • Ср ЖК <b>3.8</b> • Строгость <b>средний</b> • Фолов <b>26</b> — рандом 3.2-5.2 ЖК — надо реальный реф на матч — https://www.transfermarkt.com/.../schiedsrichter</div>
@@ -1847,15 +1847,15 @@
 </div>
 </div>
 <div class=expert-note><b>🔗 Связанные цепочки — как реальный эксперт (130+ факторов связанных, не детсад ТМ 8.5/4.5/2.5):</b><br>
-<div style="margin:6px 0"><span class=linked>1.</span> Физика рандом — надо координаты как Bernabeu 40.4530,-3.6883 — сейчас 4.63 м/с рандом</div><div style="margin:6px 0"><span class=linked>2.</span> Тактика рандом — надо парсить https://fbref.com/en/comps/12/La-Liga-Stats Team Stats — сейчас фланги 65% рандом, надо реальные 78% у Реала</div><div style="margin:6px 0"><span class=linked>3.</span> Фланги 65% + низкий блок 55% + сейвы 68% + кросс точность 32% = eff 4.5 — кроссы не долетают → ТМ угловых, если PPDA 9.1 высокий → ТБ</div><div style="margin:6px 0"><span class=linked>4.</span> Ветер 4.63 м/с + дождь 0мм + поле хорошее — кроссы не долетают: -4.5 угловых, -1.0 ЖК, -0.75 xG — как Egersund-Åsane ОБОС</div>
+<div style="margin:6px 0"><span class=linked>1.</span> Физика рандом — надо координаты как Bernabeu 40.4530,-3.6883 — сейчас 0.45 м/с рандом</div><div style="margin:6px 0"><span class=linked>2.</span> Тактика рандом — надо парсить https://fbref.com/en/comps/12/La-Liga-Stats Team Stats — сейчас фланги 65% рандом, надо реальные 78% у Реала</div><div style="margin:6px 0"><span class=linked>3.</span> Фланги 65% + низкий блок 55% + сейвы 68% + кросс точность 32% = eff 4.5 — кроссы не долетают → ТМ угловых, если PPDA 9.1 высокий → ТБ</div><div style="margin:6px 0"><span class=linked>4.</span> Ветер 0.45 м/с + дождь 0мм + поле хорошее — кроссы не долетают: -4.5 угловых, -1.0 ЖК, -0.75 xG — как Egersund-Åsane ОБОС</div>
 </div>
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:10px;margin-top:10px">
-<div class=pick><div style="display:flex;justify-content:space-between"><span>🚩 Угловые - 130+ факторов</span><span style="background:#ffcc00;color:#000;font-weight:800;padding:2px 8px;border-radius:999px;font-size:10px">1.9</span></div><div style="font-size:13px;font-weight:800;color:#ffcc00;margin:4px 0">ТБ 9.5 (9.9)</div><div style="font-size:10px;color:#a1a1aa">Фланги 65% RANDOM + eff 4.5 + PPDA 9.1 + блок 55% + ветер 4.63 + дождь 0</div><div style="margin-top:6px"><div class=reason><span>•</span> Фланги 65% база 65% +0.0</div><div class=reason><span>•</span> eff 4.5 база 10 2.2</div><div class=reason><span>•</span> Ветер 4.63 рандом</div></div></div><div class=pick><div style="display:flex;justify-content:space-between"><span>🟨 ЖК - 130+ факторов</span><span style="background:#ffcc00;color:#000;font-weight:800;padding:2px 8px;border-radius:999px;font-size:10px">1.85</span></div><div style="font-size:13px;font-weight:800;color:#ffcc00;margin:4px 0">ТМ 4.5 (3.8)</div><div style="font-size:10px;color:#a1a1aa">Судья средний 3.8 RANDOM 3.2-5.2 + дерби 0/5</div><div style="margin-top:6px"><div class=reason><span>•</span> Реф 3.8 RANDOM</div><div class=reason><span>•</span> Дерби 0/5</div></div></div><div class=pick><div style="display:flex;justify-content:space-between"><span>⚽ Голы - 130+ факторов</span><span style="background:#ffcc00;color:#000;font-weight:800;padding:2px 8px;border-radius:999px;font-size:10px">1.85</span></div><div style="font-size:13px;font-weight:800;color:#ffcc00;margin:4px 0">ТМ 2.5 (1.68)</div><div style="font-size:10px;color:#a1a1aa">xG 1.4 RANDOM 1.8-3.0 vs xGA 1.1</div><div style="margin-top:6px"><div class=reason><span>•</span> xG 1.4 RANDOM</div><div class=reason><span>•</span> H2H 2.2</div></div></div>
+<div class=pick><div style="display:flex;justify-content:space-between"><span>🚩 Угловые - 130+ факторов</span><span style="background:#ffcc00;color:#000;font-weight:800;padding:2px 8px;border-radius:999px;font-size:10px">1.9</span></div><div style="font-size:13px;font-weight:800;color:#ffcc00;margin:4px 0">ТБ 10.5 (11.3)</div><div style="font-size:10px;color:#a1a1aa">Фланги 65% RANDOM + eff 4.5 + PPDA 9.1 + блок 55% + ветер 0.45 + дождь 0</div><div style="margin-top:6px"><div class=reason><span>•</span> Фланги 65% база 65% +0.0</div><div class=reason><span>•</span> eff 4.5 база 10 2.2</div><div class=reason><span>•</span> Ветер 0.45 рандом</div></div></div><div class=pick><div style="display:flex;justify-content:space-between"><span>🟨 ЖК - 130+ факторов</span><span style="background:#ffcc00;color:#000;font-weight:800;padding:2px 8px;border-radius:999px;font-size:10px">1.85</span></div><div style="font-size:13px;font-weight:800;color:#ffcc00;margin:4px 0">ТМ 4.5 (3.8)</div><div style="font-size:10px;color:#a1a1aa">Судья средний 3.8 RANDOM 3.2-5.2 + дерби 0/5</div><div style="margin-top:6px"><div class=reason><span>•</span> Реф 3.8 RANDOM</div><div class=reason><span>•</span> Дерби 0/5</div></div></div><div class=pick><div style="display:flex;justify-content:space-between"><span>⚽ Голы - 130+ факторов</span><span style="background:#ffcc00;color:#000;font-weight:800;padding:2px 8px;border-radius:999px;font-size:10px">1.85</span></div><div style="font-size:13px;font-weight:800;color:#ffcc00;margin:4px 0">ТМ 2.5 (1.68)</div><div style="font-size:10px;color:#a1a1aa">xG 1.4 RANDOM 1.8-3.0 vs xGA 1.1</div><div style="margin-top:6px"><div class=reason><span>•</span> xG 1.4 RANDOM</div><div class=reason><span>•</span> H2H 2.2</div></div></div>
 </div>
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Wisconsin vs Marquette — 03:00 MSK — Wisconsin </div><div style="font-size:10px;color:#a1a1aa">🌬️ 2.42 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 21.6°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Wisconsin vs Marquette — 03:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 2.42 м/с | 🌡️ 21.6°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -1881,7 +1881,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Instituto (Córdoba) vs San Lorenzo — 03:15 MSK — Instituto (Córdoba) </div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.0 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 18.0°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Instituto (Córdoba) vs San Lorenzo — 03:15 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.0 м/с | 🌡️ 18.0°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -1907,7 +1907,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Tigre vs Barracas Central — 03:15 MSK — Tigre </div><div style="font-size:10px;color:#a1a1aa">🌬️ 5.66 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 14.7°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Tigre vs Barracas Central — 03:15 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 5.66 м/с | 🌡️ 14.7°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -1933,7 +1933,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Universidad Católica vs O'Higgins — 03:45 MSK — Universidad Católica </div><div style="font-size:10px;color:#a1a1aa">🌬️ 2.57 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 18.1°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Universidad Católica vs O'Higgins — 03:45 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 2.57 м/с | 🌡️ 18.1°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -1959,7 +1959,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Deportes Tolima vs Cúcuta Deportivo — 04:05 MSK — Deportes Tolima </div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.0 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 18.0°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Deportes Tolima vs Cúcuta Deportivo — 04:05 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.0 м/с | 🌡️ 18.0°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -1985,7 +1985,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — California Baptist vs Denver — 05:00 MSK — California Baptist </div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.09 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 24.7°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — California Baptist vs Denver — 05:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.09 м/с | 🌡️ 24.7°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -2011,7 +2011,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Seattle U vs Cal State Fullerton — 05:00 MSK — Seattle U </div><div style="font-size:10px;color:#a1a1aa">🌬️ 1.34 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 16.1°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Seattle U vs Cal State Fullerton — 05:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 1.34 м/с | 🌡️ 16.1°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -2037,7 +2037,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — UC Santa Barbara vs San Diego — 05:00 MSK — UC Santa Barbara </div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.0 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 18.0°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — UC Santa Barbara vs San Diego — 05:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 3.0 м/с | 🌡️ 18.0°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
@@ -2063,7 +2063,7 @@
 </div></div>
 
 <div class=league style="border-color:#ff000030">
-<div class=league-head><div><div class=league-title> — Utah Tech vs Sacramento State — 05:00 MSK — Utah Tech </div><div style="font-size:10px;color:#a1a1aa">🌬️ 2.24 м/с ⚠️ рандом 2-13 надо координаты | 🌡️ 18.2°C | Судья нет ⚠️ RANDOM 3.2-5.2 | Дерби False  | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span><span class=badge expert>130+ факторов</span></div></div>
+<div class=league-head><div><div class=league-title> — Utah Tech vs Sacramento State — 05:00 MSK</div><div style="font-size:10px;color:#a1a1aa">🌬️ 2.24 м/с | 🌡️ 18.2°C | Судья — | REAL 0/4</div></div><div><span class=badge fake>REAL 0/4</span></div></div>
 <div style="padding:16px;background:#0a0a0a">
 <div class=factors-grid>
 <div class=factor-group><h4>🎯 Тактика 35 — FBref.com <span style="color:#ff8888">RANDOM 58-84% надо реальные 78% у Реала — https://fbref.com/en/comps/12/La-Liga-Stats</span></h4>
